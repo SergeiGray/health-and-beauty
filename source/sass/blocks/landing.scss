@@ -1,0 +1,121 @@
+.landing {
+  max-width: 1750px;
+  margin: 0 auto;
+  background-color: #FCF6F3;
+
+  .wrapper {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: 780px;
+    margin: 0;
+    padding-top: 122px;
+    padding-left: 105px;
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .title {
+    display: flex;
+    flex-direction: column;
+    font-weight: 900;
+    font-size: 85px;
+    line-height: 116px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #528491;
+    margin-top: 0;
+    margin-bottom: 48px;
+    z-index: 1;
+  }
+
+  .subtitle {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 200%;
+    letter-spacing: 0.3em;
+    text-transform: uppercase;
+    color: #528491;
+    margin-left: 5px;
+    margin-bottom: 15px;
+  }
+
+  .text {
+    width: 425px;
+    line-height: 200%;
+    margin-left: 5px;
+    margin-bottom: 60px;
+  }
+
+  .button {
+    margin-left: 5px;
+  }
+
+  .menu {
+    z-index: 1;
+    padding-top: 33px;
+
+    .list {
+      display: flex;
+      flex-direction: column;
+      width: 225px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .item {
+      margin-bottom: 27px;
+    }
+
+    .link {
+      font-size: 12px;
+      line-height: 16px;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: #354F62;
+      text-decoration: none;
+    }
+  }
+
+  .image {
+    position: absolute;
+    top: -96px;
+    left: 770px;
+    display: flex;
+    width: 684px;
+    height: 973px;
+    background-image: url('../img/landing_image_desktop.jpg');
+
+    &::after {
+      position: absolute;
+      top: 150px;
+      left: -165px;
+      content: '';
+      width: 316px;
+      height: 245px;
+      background-image: url('../img/45+.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &::before {
+      position: absolute;
+      top: 617px;
+      left: -82px;
+      content: '';
+      width: 168px;
+      height: 169px;
+      background-image: url('../img/round_inscription.png');
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
