@@ -1,18 +1,17 @@
 .landing {
-  max-width: 1750px;
-  margin: 0 auto;
-  background-color: #FCF6F3;
+  min-height: 94vh;
+  margin-bottom: 250px;
 
   .wrapper {
     position: relative;
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 90vw;
     box-sizing: border-box;
-    min-height: 780px;
-    margin: 0;
-    padding-top: 122px;
-    padding-left: 105px;
+    min-height: 40vw;
+    padding-top: 5vw;
+    padding-left: 6vw;
+    background-color: #FCF6F3;
   }
 
   .content {
@@ -25,20 +24,20 @@
     display: flex;
     flex-direction: column;
     font-weight: 900;
-    font-size: 85px;
-    line-height: 116px;
+    font-size: 4.3vw;
+    line-height: 5.7vw;
     letter-spacing: 0.05em;
     text-transform: uppercase;
     color: #528491;
     margin-top: 0;
-    margin-bottom: 48px;
+    margin-bottom: 2.1vw;
     z-index: 1;
   }
 
   .subtitle {
     font-weight: 500;
-    font-size: 16px;
-    line-height: 200%;
+    font-size: 0.82vw;
+    line-height: 2vw;
     letter-spacing: 0.3em;
     text-transform: uppercase;
     color: #528491;
@@ -47,36 +46,38 @@
   }
 
   .text {
-    width: 425px;
-    line-height: 200%;
-    margin-left: 5px;
-    margin-bottom: 60px;
+    width: 27vw;
+    line-height: 1.7vw;
+    margin-bottom: 2.9vw;
+    font-size: 0.8vw;
   }
 
   .button {
-    margin-left: 5px;
+    min-height: 4vw;
+    min-width: 12.5vw;
+    font-size: 0.7vw;
   }
 
   .menu {
     z-index: 1;
-    padding-top: 33px;
+    padding-top: 2.8vw;
 
     .list {
       display: flex;
       flex-direction: column;
-      width: 225px;
+      width: 12vw;
       list-style: none;
       margin: 0;
       padding: 0;
     }
 
     .item {
-      margin-bottom: 27px;
+      margin-bottom: 1.4vw;
     }
 
     .link {
-      font-size: 12px;
-      line-height: 16px;
+      font-size: 0.6vw;
+      line-height: 0.82vw;
       letter-spacing: 0.06em;
       text-transform: uppercase;
       color: #354F62;
@@ -86,36 +87,116 @@
 
   .image {
     position: absolute;
-    top: -96px;
-    left: 770px;
+    top: -5vw;
+    left: 44%;
     display: flex;
-    width: 684px;
-    height: 973px;
+    width: 35vw;
+    height: 50vw;
     background-image: url('../img/landing_image_desktop.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
 
     &::after {
       position: absolute;
-      top: 150px;
-      left: -165px;
+      top: 7.8vw;
+      left: -8vw;
       content: '';
-      width: 316px;
-      height: 245px;
+      width: 16vw;
+      height: 12vw;
       background-image: url('../img/45+.png');
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
     }
 
     &::before {
       position: absolute;
-      top: 617px;
-      left: -82px;
+      top: 31.5vw;
+      left: -4.4vw;
       content: '';
-      width: 168px;
-      height: 169px;
+      width: 9vw;
+      height: 9vw;
       background-image: url('../img/round_inscription.png');
       background-repeat: no-repeat;
       background-position: center;
+      background-size: cover;
     }
   }
 }
 
+@media (min-width: $hd_desktop) {
+  .landing {
+    min-height: auto;
+
+    .wrapper {
+      width: 1750px;
+      min-height: 780px;
+      padding-top: 100px;
+      padding-left: 105px;
+    }
+
+    .title {
+      font-size: 85px;
+      line-height: 116px;
+      margin-bottom: 40px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      line-height: 200%;
+    }
+
+    .text {
+      width: 570px;
+      font-size: 16px;
+      line-height: 200%;
+      margin-bottom: 60px;
+    }
+
+    .button {
+      min-height: 88px;
+      min-width: 245px;
+      font-size: 14px;
+      line-height: 19px;
+    }
+
+    .image {
+      top: -96px;
+      left: 44%;
+      width: 684px;
+      height: 973px;
+
+      &::after {
+        top: 150px;
+        left: -165px;
+        width: 316px;
+        height: 245px;
+      }
+
+      &::before {
+        top: 617px;
+        left: -82px;
+        width: 168px;
+        height: 169px;
+      }
+    }
+
+    .menu {
+      padding-top: 54px;
+
+      .list {
+        width: 225px;
+      }
+
+      .item {
+        margin-bottom: 27px;
+      }
+
+      .link {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+  }
+}
