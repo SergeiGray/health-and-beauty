@@ -1,0 +1,25 @@
+.partner {
+  margin-bottom: 150px;
+
+  .wrapper {
+    position: relative;
+  }
+
+  .title {
+    font-size: 28px;
+    line-height: 200%;
+    margin-bottom: 32px;
+  }
+
+  .text {
+    width: 720px;
+    line-height: 200%;
+    margin-bottom: 32px;
+  }
+
+  .image {
+    position: absolute;
+    top: 20px;
+    left: 785px;
+  }
+}
