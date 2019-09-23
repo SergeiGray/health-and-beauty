@@ -1,0 +1,123 @@
+.program {
+  margin-bottom: 400px;
+
+  .wrapper {
+    position: relative;
+  }
+
+  .form {
+    position: relative;
+    z-index: 1;
+    width: 480px;
+    box-sizing: border-box;
+    padding-top: 55px;
+    padding-left: 72px;
+    padding-right: 77px;
+    background-color: #E59292;
+    background-image: url("data:image/svg+xml,%3Csvg width='217' height='311' viewBox='0 0 217 311' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath opacity='0.1' d='M1 293.233V227.878C13.8524 234.312 26.9728 239.169 40.3606 242.448L40.37 242.45L40.3795 242.452C54.2487 245.566 66.8697 247.128 78.2367 247.128C88.2863 247.128 96.7472 246.421 103.603 244.993C110.445 243.568 115.758 241.41 119.453 238.457C127.034 232.622 130.831 224.713 130.831 214.834C130.831 207.888 128.948 201.896 125.147 196.913C121.567 191.563 114.959 187.674 105.568 185.112C96.4127 182.538 83.0536 181.27 65.5496 181.27H47.942V121.95H65.9725C89.1038 121.95 105.437 119.001 114.726 112.909C124.252 106.844 129.139 98.9435 129.139 89.2321C129.139 80.7655 125.902 74.4907 119.358 70.6178C112.947 66.5426 104.57 64.5497 94.3069 64.5497C85.19 64.5497 76.4907 65.8319 68.2135 68.4007L68.2039 68.4037C60.2752 70.9523 53.3186 73.7894 47.3407 76.9191C41.9336 79.4943 37.6735 81.7299 34.5765 83.6242L1.77893 30.7381C13.9202 22.5646 27.8179 15.5903 43.4788 9.82032C59.6809 3.95451 80.8385 1 106.994 1C137.887 1 162.047 7.18033 179.583 19.4275L179.589 19.4317C197.365 31.6522 206.221 48.4024 206.221 69.7787C206.221 84.0086 203.154 96.2285 197.061 106.478C190.937 116.497 182.867 124.847 172.838 131.534C163.063 137.957 152.164 142.849 140.134 146.206L139.403 146.41V147.17V148.438V149.329L140.288 149.432C164.405 152.236 182.788 159.513 195.552 171.168L195.56 171.175L195.569 171.183C208.555 182.511 215.102 198.702 215.102 219.908C215.102 236.065 210.649 250.958 201.732 264.612L201.728 264.618L201.724 264.624C193.114 278.234 179.616 289.114 161.146 297.23L161.141 297.232C142.988 305.331 119.318 309.409 90.0779 309.409C70.6728 309.409 54.1127 308.003 40.3851 305.202C26.848 302.163 13.7198 298.173 1 293.233Z' stroke='white' stroke-width='2'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: 215px 40px;
+  }
+
+  .title {
+    font-weight: 900;
+    font-size: 26px;
+    text-transform: none;
+    line-height: 35px;
+    letter-spacing: 0;
+    color: #FFFFFF;
+  }
+
+  .subtitle {
+    display: flex;
+    font-weight: 900;
+    font-size: 100px;
+    line-height: 136px;
+    color: #FFFFFF;
+    margin: 0 0 31px;
+
+    .up {
+      font-size: 48px;
+      line-height: 90px;
+      align-self: flex-start;
+      margin-right: 20px;
+    }
+
+    .down {
+      font-size: 48px;
+      line-height: 100px;
+      align-self: flex-end;
+      margin-left: 15px;
+    }
+  }
+
+  .input {
+    width: 100%;
+    min-height: 56px;
+    box-sizing: border-box;
+    border: none;
+    padding-left: 25px;
+    margin-bottom: 30px;
+  }
+
+  .submit {
+    width: 100%;
+    min-height: 77px;
+    background-color: transparent;
+    border: 2px solid #FFFFFF;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 19px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    margin-bottom: 80px;
+  }
+
+  .book {
+    z-index: 0;
+    position: absolute;
+    top: -122px;
+    left: 323px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1191px;
+    height: 1043px;
+    background-image: url('../img/program_image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  .link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: #528491;
+    box-shadow: 4px 4px 15px rgba(53, 79, 98, 0.4);
+    text-decoration: none;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 25px;
+    color: #FFFFFF;
+    margin-bottom: 110px;
+  }
+
+  .program_bg {
+    z-index: -1;
+    position: absolute;
+    top: 100px;
+    left: -160px;
+    content: '';
+    width: 707px;
+    height: 609px;
+    background-image: url('../img/program_bg_desktop.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

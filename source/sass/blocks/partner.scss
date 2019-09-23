@@ -22,4 +22,14 @@
     top: 20px;
     left: 785px;
   }
+
+  .partner__bg {
+    z-index: -1;
+    position: absolute;
+    top: -375px;
+    left: -150px;
+    width: 1814px;
+    height: 1410px;
+    background-color: #FCF6F3;
+  }
 }
