@@ -2,7 +2,25 @@
   margin-bottom: 152px;
 
   .title {
+    position: relative;
     margin-bottom: 81px;
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: -138px;
+      left: 410px;
+      content: 'Тарифы';
+      font-weight: 900;
+      font-size: 210px;
+      line-height: 284px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: transparent;
+      opacity: 0.6;
+      border: none;
+       -webkit-text-stroke: 3px #ffffff;
+    }
   }
 
   .list {

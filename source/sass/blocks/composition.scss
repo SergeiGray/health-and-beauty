@@ -1,0 +1,149 @@
+.composition {
+
+  .wrapper {
+    position: relative;
+  }
+
+  .title {
+    position: relative;
+    margin-bottom: 72px;
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: -60px;
+      left: 900px;
+      content: 'Что';
+      font-weight: 900;
+      font-size: 210px;
+      line-height: 284px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: transparent;
+      opacity: 0.6;
+      border: none;
+       -webkit-text-stroke: 3px #FCF6F3;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .item {
+    display: flex;
+    width: 684px;
+    min-height: 458px;
+    box-sizing: border-box;
+    padding: 25px 23px;
+    background-color: #f5efef;
+    background-image: url('../img/composition_item_bg.png');
+    background-position: center;
+    background-size: cover;
+    margin-bottom: 30px;
+
+    &:nth-child(1) {
+      margin-right: 30px;
+
+      .bonus {
+        margin-bottom: 43px;
+      }
+    }
+
+    &:nth-child(2) {
+
+      .bonus {
+        margin-bottom: 43px;
+      }
+    }
+
+    &:nth-child(3) {
+      margin-right: 30px;
+
+      .bonus {
+        margin-bottom: 97px;
+      }
+    }
+
+    &:nth-child(4) {
+
+      .bonus {
+        margin-bottom: 97px;
+      }
+    }
+  }
+
+  .content {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 45px 10px 10px 45px;
+    border: 4px solid #F3EDE9;
+  }
+
+  .subtitle {
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 200%;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #528491;
+    margin: 0 0 17px;
+  }
+
+  .rations {
+    margin: 0;
+    padding-left: 20px;
+  }
+
+  .text {
+    width: 540px;
+    line-height: 200%;
+  }
+
+  .bonus {
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+
+    .icon {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      width: 33px;
+      height: 33px;
+      border-radius: 50%;
+      background-color: #528491;
+      box-shadow: 0px 4px 4px rgba(230, 146, 146, 0.3);
+      color: #ffffff;
+      margin: 0 25px 0 0;
+    }
+
+    .text {
+      font-weight: bold;
+      font-size: 16px;
+      color: #354F62;
+    }
+  }
+
+  .composition_bg {
+    z-index: -1;
+    position: absolute;
+    bottom: 90px;
+    right: -155px;
+    width: 771px;
+    height: 663px;
+    background-image: url('../img/composition_bg.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+}

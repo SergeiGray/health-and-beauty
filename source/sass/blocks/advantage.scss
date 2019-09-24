@@ -2,7 +2,25 @@
   margin-bottom: 160px;
 
   .title {
+    position: relative;
     margin-bottom: 120px;
+
+    &::after {
+      z-index: -1;
+      position: absolute;
+      top: -100px;
+      left: 900px;
+      content: 'Преимущества';
+      font-weight: 900;
+      font-size: 210px;
+      line-height: 284px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: transparent;
+      opacity: 0.6;
+      border: none;
+       -webkit-text-stroke: 3px #FCF6F3;
+    }
   }
 
   .list {

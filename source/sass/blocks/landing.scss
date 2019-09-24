@@ -85,6 +85,11 @@
     }
   }
 
+  @keyframes landing_print_rotation {
+    from {transform: rotate(0deg);}
+    to {transform: rotate(360deg);}
+  }
+
   .image {
     position: absolute;
     top: -5vw;
@@ -111,6 +116,11 @@
     }
 
     &::before {
+      animation-name: landing_print_rotation;
+      animation-duration: 15s;
+      animation-timing-function: linear;
+      animation-delay: 0s;
+      animation-iteration-count: infinite;
       position: absolute;
       top: 31.5vw;
       left: -4.4vw;

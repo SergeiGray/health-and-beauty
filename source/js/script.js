@@ -21,6 +21,24 @@
         touch: true,
         move: 1
       });
+
+      $('.feedback__slider').flexslider({
+        selector: ".feedback__slider_container > li",
+        animation: "slide",
+        slideshow: false,
+        smoothHeight: true,
+        keyboard: true,
+        prevText: "",
+        nextText: "",
+        itemWidth: 328,
+        itemMargin: 30,
+        minItems: 1,
+        maxItems: 5,
+        controlNav: false,
+        directionNav: true,
+        touch: true,
+        move: 1
+      });
     });
   };
 

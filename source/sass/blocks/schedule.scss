@@ -1,0 +1,225 @@
+.schedule {
+  z-index: 0;
+  position: relative;
+  margin-top: -90px;
+  margin-bottom: 310px;
+  padding-top: 142px;
+
+  .schedule_bg {
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    left: 8px;
+    width: 1814px;
+    height: 1040px;
+    background-color: #528491;
+  }
+
+  .title {
+    position: relative;
+    color: #FCF6F3;
+    margin-bottom: 36px;
+
+    &::after {
+      z-index: 1;
+      position: absolute;
+      top: -60px;
+      left: 900px;
+      content: 'Как';
+      font-weight: 900;
+      font-size: 210px;
+      line-height: 284px;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: transparent;
+      opacity: 0.05;
+      border: none;
+       -webkit-text-stroke: 3px #ffffff;
+    }
+  }
+
+  .banner {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 68px;
+    padding: 0;
+    list-style: none;
+
+    .part {
+
+      &:not(:last-child) {
+        margin-right: 86px;
+      }
+    }
+
+    .text {
+      font-weight: normal;
+      font-size: 24px;
+      line-height: 200%;
+      color: #FFFFFF;
+      margin-top: -45px;
+    }
+  }
+
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .item {
+    position: relative;
+    overflow-x: hidden;
+    display: flex;
+    align-items: flex-start;
+    width: 446px;
+    height: 154px;
+    box-sizing: border-box;
+    background-color: #578895;
+    box-shadow: 0px 15px 20px -20px rgba(0, 0, 0, 0.05);
+    margin-bottom: 30px;
+    padding-top: 65px;
+
+    .step {
+      position: relative;
+      font-weight: bold;
+      font-size: 16px;
+      color: #FFFFFF;
+      margin:  0 20px 0 100px;
+
+      &::after {
+        z-index: 0;
+        position: absolute;
+        top: -50px;
+        left: -55px;
+        content: '';
+        font-weight: 900;
+        font-size: 100px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: transparent;
+        opacity: 0.06;
+        border: none;
+         -webkit-text-stroke: 2px #ffffff;
+      }
+    }
+
+    .text {
+      width: 210px;
+      color: #FFFFFF;
+
+      a {
+        color: #FFFFFF;
+      }
+    }
+
+    &::before {
+      position: absolute;
+      top: 43px;
+      left: -50px;
+      content: '';
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-color: #528491;
+    }
+
+    &::after {
+      position: absolute;
+      top: 43px;
+      right: -50px;
+      content: '';
+      width: 68px;
+      height: 68px;
+      border-radius: 50%;
+      background-color: #528491;
+    }
+
+    &:nth-child(1) {
+      .step {
+
+        &::after {
+          content: '01';
+        }
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+
+    &:nth-child(3) {
+      .step {
+        &::after {
+          content: '02';
+        }
+      }
+    }
+
+    &:nth-child(5) {
+      .step {
+        &::after {
+          content: '03';
+        }
+      }
+    }
+
+    &:nth-child(6) {
+      .step {
+        &::after {
+          content: '04';
+        }
+      }
+    }
+
+    &:nth-child(8) {
+      .step {
+        &::after {
+          content: '05';
+        }
+      }
+    }
+
+    &:nth-child(10) {
+      .step {
+        &::after {
+          content: '06';
+        }
+      }
+
+      &::after {
+        display: none;
+      }
+    }
+  }
+
+  .arrow {
+    z-index: 1;
+    position: relative;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-radius: 50%;
+    background-color: transparent;
+    margin-bottom: 30px;
+
+    &::before {
+      position: absolute;
+      top: -21px;
+      left: -21px;
+      content: '';
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background-color: #578895;
+      background-image: url("data:image/svg+xml,%3Csvg width='9' height='16' viewBox='0 0 9 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M2.34309 0.929612L8.70705 7.29357C9.09758 7.6841 9.09758 8.31726 8.70705 8.70779L2.34309 15.0717C1.95257 15.4623 1.3194 15.4623 0.928878 15.0717C0.538354 14.6812 0.538354 14.0481 0.928878 13.6575L6.58573 8.00068L0.928879 2.34383C0.538355 1.9533 0.538355 1.32014 0.92888 0.929612C1.3194 0.539088 1.95257 0.539088 2.34309 0.929612Z' fill='white'/%3E%3C/svg%3E");
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+  }
+}
+
