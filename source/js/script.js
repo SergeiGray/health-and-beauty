@@ -42,6 +42,16 @@
     });
   };
 
+  var getBlockQuestionsSlider = function () {
+    $('.questions .item .subtitle').click( function (evt) {
+        evt.preventDefault();
+        $(evt.target).parents('.item').find('.text').slideToggle('slow', function() {
+          $(evt.target).parents('.item').toggleClass('active');
+        });
+    });
+  };
+
   hangFlexslider();
+  getBlockQuestionsSlider();
 
 }());
