@@ -1,0 +1,21 @@
+.footer {
+
+  .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 235px;
+  }
+
+  .logo {
+    margin-left: 0;
+  }
+
+  .text {
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 200%;
+    color: #354F62;
+    text-decoration: none;
+  }
+}

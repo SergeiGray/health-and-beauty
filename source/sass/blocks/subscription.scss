@@ -1,0 +1,60 @@
+.subscription {
+  width: 1750px;
+  margin: 0 auto;
+  padding-top: 125px;
+  background-color: #E59292;
+  background-image: url('../img/subscription_bg_desktop.png');
+  background-repeat: no-repeat;
+  background-position: center right;
+
+  .row {
+    display: flex;
+    margin-bottom: 50px;
+  }
+
+  .title {
+    color: #FCF6F3;
+    margin-bottom: 37px;
+  }
+
+  .text {
+    color: #ffffff;
+    margin-bottom: 68px;
+  }
+
+  .input {
+    width: 328px;
+    height: 55px;
+    box-sizing: border-box;
+    padding-left: 25px;
+    background-color: #ffffff;
+    border: none;
+    margin-right: 30px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 200%;
+    color: #354F62;
+  }
+
+  .button {
+    min-width: 268px;
+    min-height: 55px;
+    box-sizing: border-box;
+    border: 2px solid #FFFFFF;
+    margin-left: 10px;
+    padding: 0;
+  }
+
+  .main__checkbox_label {
+    display: inline-block;
+    width: 610px;
+    margin-bottom: 130px;
+
+    .link {
+      font-size: 14px;
+      line-height: 200%;
+      color: #FFFFFF;
+    }
+  }
+}
+
