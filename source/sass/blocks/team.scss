@@ -85,8 +85,6 @@
 .team__slider_item {
   position: relative;
   display: flex !important;
-  // overflow-x: hidden;
-  // margin-right: 40px;
 
   .container {
     display: flex;
@@ -99,13 +97,13 @@
     .image {
       margin-top: -4px;
       margin-left: -4px;
-      margin-right: 105px;
+      margin-right: 65px;
     }
   }
 
   .content {
-    width: 400px;
-    padding-top: 77px;
+    width: 515px;
+    padding-top: 60px;
 
     .name {
       font-weight: bold;
@@ -118,16 +116,23 @@
     }
 
     .position {
+      width: 400px;
       font-weight: 500;
       font-size: 13px;
-      line-height: 200%;
+      line-height: 160%;
       color: #354F62;
-      margin: 0 0 32px;
+      margin: 0 0 15px;
     }
 
     .text {
       line-height: 200%;
     }
+  }
+
+  .image_inactive_container {
+    width: 369px;
+    height: 424px;
+    background: #FCF6F3;
   }
 
   .image {
@@ -138,7 +143,7 @@
   .inactive {
     position: absolute;
     left: 1505px;
-    filter: grayscale(100%);
+    filter: grayscale(100%) opacity(0.6);
   }
 
   .first {

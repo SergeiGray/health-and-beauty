@@ -7,15 +7,32 @@
     height: 235px;
   }
 
-  .logo {
-    margin-left: 0;
-  }
-
   .text {
     font-weight: 300;
     font-size: 14px;
-    line-height: 200%;
+    line-height: 130%;
     color: #354F62;
     text-decoration: none;
   }
+
+  .logo {
+    margin-left: 0;
+
+    .icon {
+      fill: #929FA8;
+    }
+
+    .text {
+      font-weight: bold;
+      color: #929FA8;
+    }
+  }
+}
+
+.display_off {
+  display: none !important;
+}
+
+.display_on {
+  display: flex !important;
 }

@@ -2,7 +2,7 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Красота и здоровье</title>
+  <title>Красота  и здоровье</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="css/normalize.css">
   <link rel="stylesheet" type="text/css" href="css/select2.min.css">
@@ -12,15 +12,29 @@
 <body>
   <header class="header">
     <div class="wrapper">
+    <div class="container">
       <a href="index.html" class="logo">
-        <svg class="icon" width="23" height="34">
+        <svg class="icon" width="51" height="31">
           <use xlink:href="img/sprite.svg#icon-logo"></use>
         </svg>
         <div class="col">
-          <p class="title">Красота и здоровье</p>
-          <p class="text">курс для зрелых женщин</p>
+          <p class="text">Совершенно</p>
+          <p class="text">Летние</p>
         </div>
       </a>
+      <button class="menu_open">Меню</button>
+      <nav class="header_menu">
+        <button class="menu_close"></button>
+        <a href="" class="header_menu_link">Курс поможет</a>
+        <a href="" class="header_menu_link">Кто проводит</a>
+        <a href="" class="header_menu_link">Тарифы</a>
+        <a href="" class="header_menu_link">Преимущества</a>
+        <a href="" class="header_menu_link">Что входит в курс</a>
+        <a href="" class="header_menu_link">Как проходит курс</a>
+        <a href="" class="header_menu_link">Отзывы</a>
+        <a href="" class="header_menu_link">Частые вопросы</a>
+      </nav>
+    </div>
       <a href="" class="private_office">
         <svg class="icon" width="15" height="15">
           <use xlink:href="img/sprite.svg#icon-login"></use>
@@ -100,7 +114,6 @@
           <li class="item">
             <p class="subtitle">Предотвратить возрастные риски</p>
             <p class="text">Снизить уровень холестерина и нормализовать сахар крови; восстановиться после инфаркта миокарда и операций на сосудах сердца.</p>
-            <a href="" class="link">Подробнее</a>
             <svg class="icon" width="124" height="124">
               <use xlink:href="img/sprite.svg#icon-heart-rate"></use>
             </svg>
@@ -137,60 +150,80 @@
               <img src="img/team_nabatov.jpg" alt="" class="image">
               <div class="content">
                 <p class="name">Дмитрий Набатов</p>
-                <p class="position">Инструктор по фитнесу, ЛФК, психолог, психотерапевт.</p>
-                <p class="text">Специализируется на вопросах похудения и лечения боли в спине. Учился о самого известного теле-доктора страны Сергея Агапкина (программа:  «О самом главном» на телеканале Россия).</p>
+                <p class="position">тренер по фитнесу, преподаватель йоги, йогатерапевт, психолог, психотерапевт</p>
+                <p class="text">Ученик специалиста по физиотерапии и лечебной физкультуре, клинического психолога, йогатерапевта Сергея Агапкина, ведущего медицинского телешоу «О самом главном» телеканала Россия. Дмитрий знает все о физических проблемах людей старшего возраста. Поможет похудеть, укрепить тело и дух, наполниться силой и энергией.</p>
               </div>
             </div>
-            <img src="img/team_remizova.jpg" alt="" class="image inactive first">
-            <img src="img/team_romanova.jpg" alt="" class="image inactive">
+            <div class="image_inactive_container">
+              <img src="img/team_remizova.jpg" alt="" class="image inactive first">
+            </div>
+            <div class="image_inactive_container">
+              <img src="img/team_romanova.jpg" alt="" class="image inactive">
+            </div>
           </li>
           <li class="team__slider_item">
             <div class="container">
               <img src="img/team_remizova.jpg" alt="" class="image">
               <div class="content">
                 <p class="name">Светлана Ремизова</p>
-                <p class="position">Врач дерматолог, косметолог.</p>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi voluptatum dolores non ut aperiam harum, amet commodi dolore praesentium eum corporis, optio voluptates, voluptatem dolorum dolor quam sequi quaerat repellendus!</p>
+                <p class="position">врач – дерматовенеролог, косметолог</p>
+                <p class="text">Знает все о старении кожи лица и тела. Научит, как избежать или замедлить образование морщин и сохранить овал лица! Расскажет, работают на самом деле кремы и как можно омолодить внешность без пластических операций.</p>
               </div>
             </div>
-            <img src="img/team_romanova.jpg" alt="" class="image inactive first">
-            <img src="img/team_dondukovskaya.jpg" alt="" class="image inactive">
+            <div class="image_inactive_container">
+              <img src="img/team_romanova.jpg" alt="" class="image inactive first">
+            </div>
+            <div class="image_inactive_container">
+              <img src="img/team_dondukovskaya.jpg" alt="" class="image inactive">
+            </div>
           </li>
           <li class="team__slider_item">
             <div class="container">
               <img src="img/team_romanova.jpg" alt="" class="image">
               <div class="content">
                 <p class="name">Наталья Романова</p>
-                <p class="position">Врач невролог, к.м.н.</p>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ducimus praesentium perferendis quibusdam molestias, soluta earum aspernatur totam nam distinctio, ab cumque aliquam magnam error ipsum quasi ipsam. Reiciendis, necessitatibus aspernatur?</p>
+                <p class="position">врач – невролог, кандидат медицинских наук, автор научных работ</p>
+                <p class="text">Расскажет всю правду о том, как не довести себя до инсульта! Поможет справиться со своими нервами, сосудами и «приливами», а также как правильно заниматься фитнесом при проблемах с позвоночником.</p>
               </div>
             </div>
-            <img src="img/team_dondukovskaya.jpg" alt="" class="image inactive first">
-            <img src="img/team_nadejdina.jpg" alt="" class="image inactive">
+            <div class="image_inactive_container">
+              <img src="img/team_dondukovskaya.jpg" alt="" class="image inactive first">
+            </div>
+            <div class="image_inactive_container">
+              <img src="img/team_nadejdina.jpg" alt="" class="image inactive">
+            </div>
           </li>
           <li class="team__slider_item">
             <div class="container">
               <img src="img/team_dondukovskaya.jpg" alt="" class="image">
               <div class="content">
                 <p class="name">Римма Дондуковская</p>
-                <p class="position">Врач диетолог.</p>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eveniet doloribus inventore ea vero quo porro ipsum fugit odit accusamus modi unde dolores eligendi, repudiandae, id hic impedit corrupti ut rerum.</p>
+                <p class="position">врач-диетолог, кандидат медицинских наук</p>
+                <p class="text">Преподаватель Колледжа бодибилдинга им. Б.Вейдера, врач-консультант ДЮСШ Олимпийского резерва, старший тренер фитнес-центра, врач-диетолог городском многопрофильной больницы. Научит, как при помощи питания улучшить состояние при различных возрастных заболеваниях, как питаться, если в 45 лет решили заняться спортом.</p>
               </div>
             </div>
-            <img src="img/team_nadejdina.jpg" alt="" class="image inactive first">
-            <img src="img/team_nabatov.jpg" alt="" class="image inactive">
+            <div class="image_inactive_container">
+              <img src="img/team_nadejdina.jpg" alt="" class="image inactive first">
+            </div>
+            <div class="image_inactive_container">
+              <img src="img/team_nabatov.jpg" alt="" class="image inactive">
+            </div>
           </li>
           <li class="team__slider_item">
             <div class="container">
               <img src="img/team_nadejdina.jpg" alt="" class="image">
               <div class="content">
                 <p class="name">Мария Надеждина</p>
-                <p class="position">Врач акушер гинеколог.</p>
-                <p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Hic fuga itaque, vel omnis adipisci vero cumque enim harum laboriosam quas veritatis deleniti voluptates voluptas explicabo numquam aut ullam tempore, quae.</p>
+                <p class="position">врач акушер-гинеколог</p>
+                <p class="text">Убедит вас, что менопауза — не конец жизни, а её этап! Самое время следить за собой, заниматься фитнесом и заботиться о здоровье. А плохое самочувствие в этот период можно медицинскими средствами и здоровым образом жизни.</p>
               </div>
             </div>
-            <img src="img/team_nabatov.jpg" alt="" class="image inactive first">
-            <img src="img/team_remizova.jpg" alt="" class="image inactive">
+            <div class="image_inactive_container">
+              <img src="img/team_nabatov.jpg" alt="" class="image inactive first">
+            </div>
+            <div class="image_inactive_container">
+              <img src="img/team_remizova.jpg" alt="" class="image inactive">
+            </div>
           </li>
         </ul>
       </div>
@@ -211,17 +244,23 @@
           <li class="item">
             <div class="header">
               <span class="name">Базовый</span>
-              <span class="letter">S</span>
             </div>
             <div class="content">
               <p class="subtitle">Что входит в программу</p>
               <ul class="structure">
-                <li class="text">Консультация со специалистом</li>
-                <li class="text">Подбор программы питания</li>
-                <li class="text">Подбор упражнений</li>
-                <li class="text inactive">Индивидуальная консультация с тренером</li>
-                <li class="text inactive">Общий чат</li>
-                <li class="text inactive">Поддержка врачей в течение месяца после завершения программы</li>
+                <li class="text">Программа питания в соответствии  <br>с вашими параметрами и целями</li>
+                <li class="text">Программа видео тренировок для дома  <br>с разминкой и растяжкой</li>
+                <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                <li class="text">Консультации тренера-эксперта</li>
+                <li class="text">Рекомендации диетолога</li>
+                <li class="text">Общение с участниками в отдельном <br>чате</li>
+                <li class="text inactive">Рекомендации гинеколога-эндокринолога</li>
+                <li class="text inactive">Рекомендации дерматолога-косметолога</li>
+                <li class="text inactive">Рекомендации невролога</li>
+                <li class="text inactive">Доступ к материалам курса в течение 1 месяцев после завершения</li>
+                <li class="text inactive">Возможность задать вопрос всем специалистам в течение 1 месяца</li>
+                <li class="text inactive">Персональные скидки на очный прием в Сити Клиник</li>
+                <li class="text inactive">Персональные скидки на телемедицину</li>
               </ul>
               <p class="price">
                 <span>3 900 руб.</span>
@@ -233,21 +272,27 @@
           <li class="item">
             <div class="header">
               <span class="name">Стандарт</span>
-              <span class="letter">L</span>
             </div>
             <div class="content">
               <p class="subtitle">Что входит в программу</p>
               <ul class="structure">
-                <li class="text">Консультация со специалистом</li>
-                <li class="text">Подбор программы питания</li>
-                <li class="text">Подбор упражнений</li>
-                <li class="text">Индивидуальная консультация с тренером</li>
-                <li class="text">Общий чат</li>
-                <li class="text inactive">Поддержка врачей в течение месяца после завершения программы</li>
+                <li class="text">Программа питания в соответствии  <br>с вашими параметрами и целями</li>
+                <li class="text">Программа видео тренировок для дома  <br>с разминкой и растяжкой</li>
+                <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                <li class="text">Консультации тренера-эксперта</li>
+                <li class="text">Рекомендации диетолога</li>
+                <li class="text">Общение с участниками в отдельном <br>чате</li>
+                <li class="text">Рекомендации гинеколога-эндокринолога</li>
+                <li class="text">Рекомендации дерматолога-косметолога</li>
+                <li class="text">Рекомендации невролога</li>
+                <li class="text inactive">Доступ к материалам курса в течение 1 месяцев после завершения</li>
+                <li class="text inactive">Возможность задать вопрос всем специалистам в течение 1 месяца</li>
+                <li class="text inactive">Персональные скидки на очный прием в Сити Клиник</li>
+                <li class="text inactive">Персональные скидки на телемедицину</li>
               </ul>
               <p class="price">
-                <span>6 800 руб.</span>
-                <span class="old_price">8 500 руб.</span>
+                <span>6 400 руб.</span>
+                <span class="old_price">8 000 руб.</span>
               </p>
               <a href="" class="button">Записаться</a>
             </div>
@@ -255,21 +300,27 @@
           <li class="item">
             <div class="header">
               <span class="name">Продвинутый</span>
-              <span class="letter">XL</span>
             </div>
             <div class="content">
               <p class="subtitle">Что входит в программу</p>
               <ul class="structure">
-                <li class="text">Консультация со специалистом</li>
-                <li class="text">Подбор программы питания</li>
-                <li class="text">Подбор упражнений</li>
-                <li class="text">Индивидуальная консультация с тренером</li>
-                <li class="text">Общий чат</li>
-                <li class="text">Поддержка врачей в течение месяца после завершения программы</li>
+                <li class="text">Программа питания в соответствии  <br>с вашими параметрами и целями</li>
+                <li class="text">Программа видео тренировок для дома  <br>с разминкой и растяжкой</li>
+                <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                <li class="text">Консультации тренера-эксперта</li>
+                <li class="text">Рекомендации диетолога</li>
+                <li class="text">Общение с участниками в отдельном <br>чате</li>
+                <li class="text">Рекомендации гинеколога-эндокринолога</li>
+                <li class="text">Рекомендации дерматолога-косметолога</li>
+                <li class="text">Рекомендации невролога</li>
+                <li class="text">Доступ к материалам курса в течение 1 месяцев после завершения</li>
+                <li class="text">Возможность задать вопрос всем специалистам в течение 1 месяца</li>
+                <li class="text">Персональные скидки на очный прием в Сити Клиник</li>
+                <li class="text">Персональные скидки на телемедицину</li>
               </ul>
               <p class="price">
-                <span>12 400 руб.</span>
-                <span class="old_price">15 500 руб.</span>
+                <span>12 000 руб.</span>
+                <span class="old_price">15 000 руб.</span>
               </p>
               <a href="" class="button">Записаться</a>
             </div>
@@ -282,24 +333,7 @@
           </div>
           <div class="timer">
             <p class="title">До конца акции осталось</p>
-            <ul class="timer_list">
-              <li class="timer_item">
-                <span class="value day">01</span>
-                <span class="caption">дней</span>
-              </li>
-              <li class="timer_item">
-                <span class="value clock">12</span>
-                <span class="caption">часов</span>
-              </li>
-              <li class="timer_item">
-                <span class="value minute">24</span>
-                <span class="caption">минуты</span>
-              </li>
-              <li class="timer_item">
-                <span class="value second">58</span>
-                <span class="caption">секунд</span>
-              </li>
-            </ul>
+            <div class="timer_container" data-timer="2019, 11, 10, 0, 0, 0"></div>
           </div>
         </div>
       </div>
@@ -463,6 +497,17 @@
           </li>
         </ul>
         <div class="schedule_bg"></div>
+        <div class="discount">
+          <div class="interest">
+            <p class="title">Воспользуйся скидкой</p>
+            <img src="img/interest_image.png" alt="20%" class="image">
+          </div>
+          <div class="timer">
+            <p class="title">До конца акции осталось</p>
+            <div class="timer_container" data-timer="2019, 11, 10, 0, 0, 0"></div>
+          </div>
+          <a href="index.html" class="button">Записаться со скидкой 20%</a>
+        </div>
       </div>
     </section>
     <section class="feedback">
@@ -530,16 +575,6 @@
               <h2 class="subtitle">Если я заболею или уеду, можно ли приостановить участие?</h2>
               <p class="text">Да, участие в курсе можно заморозить на срок до 7 дней.</p>
             </li>
-            <li class="item">
-              <div class="pointer"></div>
-              <h2 class="subtitle">Поможет ли ваш курс вылечить мое заболевание?</h2>
-              <p class="text">Наш курс не является лечением. По поводу заболевания вам надо обратиться к врачу. А наш курс предлагает профилактику и оздоровление, поможет восстановиться после лечения в медицинском учреждении.</p>
-            </li>
-            <li class="item">
-              <div class="pointer"></div>
-              <h2 class="subtitle">На какой возраст рассчитаны ваши тренировки?</h2>
-              <p class="text">Начиная с 45 лет, верхней границы возраста нет. Упражнения разработаны так, что берегут ваши суставы и сердце. Кроме того, график тренировок гибок, его можно будет настроить под себя.</p>
-            </li>
           </ul>
           <div class="image"></div>
         </div>
@@ -565,12 +600,12 @@
   <footer class="footer">
     <div class="wrapper">
       <a href="index.html" class="logo">
-        <svg class="icon" width="23" height="34">
+        <svg class="icon" width="51" height="31">
           <use xlink:href="img/sprite.svg#icon-logo"></use>
         </svg>
         <div class="col">
-          <p class="title">Красота и здоровье</p>
-          <p class="text">курс для зрелых женщин</p>
+          <p class="text">Совершенно</p>
+          <p class="text">Летние</p>
         </div>
       </a>
       <p class="text">ООО «Красота и здоровье», 2019 ©</p>
@@ -581,6 +616,8 @@
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
   <script src="js/select2.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.countdown-ru.js"></script>
   <script src="js/svgxuse.min.js"></script>
   <script src="js/jquery.flexslider.min.js"></script>
   <script src="js/script.js"></script>
