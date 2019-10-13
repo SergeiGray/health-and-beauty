@@ -36,3 +36,11 @@
 .display_on {
   display: flex !important;
 }
+
+@media (max-width: $hd_desktop) {
+  .footer {
+    .wrapper {
+      height: 130px;
+    }
+  }
+}

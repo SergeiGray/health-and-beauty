@@ -1,8 +1,11 @@
 .feedback {
 
+  .wrapper {
+    position: relative;
+  }
+
   .title {
     position: relative;
-    margin-bottom: 77px;
 
     &::after {
       z-index: -1;
@@ -22,8 +25,20 @@
     }
   }
 
+  .feedback_x-hidden {
+    position: relative;
+    left: -30px;
+    overflow-x: hidden;
+    box-sizing: border-box;
+    width: 1660px;
+    height: 735px;
+    padding-top: 75px;
+    padding-left: 30px;
+    margin-bottom: 145px;
+  }
 
   .feedback__slider_container {
+    position: relative;
     display: flex;
     list-style: none;
     margin: 0;
@@ -31,9 +46,24 @@
   }
 
   .feedback__slider_item {
+    position: relative;
     width: 328px;
     height: 582px;
     margin-right: 30px;
+  }
+
+  .image {
+    position: absolute;
+    width: 328px;
+    height: 582px;
+
+    &:hover {
+      z-index: 1;
+      top: -70px;
+      left: -30px;
+      width: 388px;
+      height: 722px;
+    }
   }
 }
 
@@ -41,11 +71,11 @@
   position: relative;
   display: flex;
   justify-content: flex-end;
-  width: 1920px;
-  margin: 0 auto 220px;
+  width: 1660px;
 
   .flex-viewport {
     width: 1660px;
+    overflow: visible !important;
   }
 
   .flex-direction-nav a {
@@ -60,7 +90,7 @@
 
     &.flex-next {
       right: 0;
-      left: 388px;
+      left: 130px;
 
       &::before {
         content: '';
@@ -70,10 +100,16 @@
         background-repeat: no-repeat;
         background-position: center center;
       }
+
+      &:hover {
+        &::before {
+          background-image: url("data:image/svg+xml,%3Csvg width='82' height='16' viewBox='0 0 82 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M81.7071 8.70711C82.0976 8.31658 82.0976 7.68342 81.7071 7.29289L75.3431 0.928932C74.9526 0.538408 74.3195 0.538408 73.9289 0.928932C73.5384 1.31946 73.5384 1.95262 73.9289 2.34315L79.5858 8L73.9289 13.6569C73.5384 14.0474 73.5384 14.6805 73.9289 15.0711C74.3195 15.4616 74.9526 15.4616 75.3431 15.0711L81.7071 8.70711ZM0 9L81 9V7L0 7L0 9Z' fill='%23E59292'/%3E%3C/svg%3E ");
+        }
+      }
     }
 
     &.flex-prev {
-      left: 262px;
+      left: 0;
 
       &::before {
         content: '';
@@ -82,6 +118,12 @@
         background-image: url("data:image/svg+xml,%3Csvg width='82' height='16' viewBox='0 0 82 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM82 9L1 9V7L82 7V9Z' fill='%23C6B8B1'/%3E%3C/svg%3E");
         background-repeat: no-repeat;
         background-position: center center;
+      }
+
+      &:hover {
+        &::before {
+          background-image: url("data:image/svg+xml,%3Csvg width='82' height='16' viewBox='0 0 82 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M0.292892 8.70711C-0.0976334 8.31658 -0.0976334 7.68342 0.292892 7.29289L6.65685 0.928932C7.04738 0.538408 7.68054 0.538408 8.07107 0.928932C8.46159 1.31946 8.46159 1.95262 8.07107 2.34315L2.41422 8L8.07107 13.6569C8.46159 14.0474 8.46159 14.6805 8.07107 15.0711C7.68054 15.4616 7.04738 15.4616 6.65685 15.0711L0.292892 8.70711ZM82 9L1 9V7L82 7V9Z' fill='%23E59292'/%3E%3C/svg%3E ");
+        }
       }
     }
   }
@@ -94,5 +136,62 @@
     width: 330px;
     height: 582px;
     background: linear-gradient(90deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.4) 50%, rgba(255,255,255,0.8) 100%);
+  }
+}
+
+@media (max-width: $hd_desktop) {
+  .feedback {
+
+    .title {
+
+      &::after {
+        font-size: 160px;
+        line-height: 218px;
+        top: -70px;
+        left: 575px;
+      }
+    }
+
+    .feedback__slider_item {
+      width: 266px;
+      height: 472px;
+      margin-right: 25px;
+    }
+    .image {
+      width: 266px;
+      height: 472px;
+
+      &:hover {
+        top: -55px;
+        left: -20px;
+        width: 306px;
+        height: 582px;
+      }
+    }
+
+    .feedback_x-hidden {
+      left: -15px;
+      padding-top: 55px;
+      padding-left: 20px;
+      width: 1280px;
+      height: 722px;
+      margin-bottom: 0;
+    }
+
+    .feedback__slider {
+      width: 1440px;
+      justify-content: flex-start;
+
+      .flex-viewport {
+        width: 1250px;
+      }
+
+      .flex-direction-nav {
+
+        a {
+          top: 535px;
+        }
+      }
+    }
   }
 }

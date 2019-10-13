@@ -82,6 +82,10 @@
       text-transform: uppercase;
       color: #354F62;
       text-decoration: none;
+
+      &:hover {
+        color: #E59292;
+      }
     }
   }
 
@@ -206,6 +210,81 @@
       .link {
         font-size: 12px;
         line-height: 16px;
+      }
+    }
+  }
+}
+
+@media (max-width: $hd_desktop) {
+  .landing {
+    margin-bottom: 160px;
+
+    .wrapper {
+      width: 1260px;
+      min-height: 560px;
+      padding-top: 67px;
+      padding-left: 87px;
+    }
+
+    .subtitle {
+      font-size: 16px;
+      line-height: 200%;
+      margin-bottom: 0;
+    }
+
+    .title {
+      font-size: 60px;
+      line-height: 82px;
+      margin-bottom: 28px;
+    }
+
+    .text {
+      width: 501px;
+      font-size: 15px;
+      line-height: 200%;
+      margin-bottom: 38px;
+    }
+
+    .button {
+      min-width: 175px;
+      min-height: 60px;
+      padding: 20px 20px;
+      font-size: 14px;
+    }
+
+    .menu {
+      padding-top: 43px;
+
+      .list {
+       width: 155px;
+      }
+      .item {
+        margin-bottom: 27px;
+      }
+      .link {
+        font-size: 12px;
+        line-height: 16px;
+      }
+    }
+
+    .image {
+      top: -70px;
+      left: 565px;
+      width: 490px;
+      height: 700px;
+
+      &::after {
+        top: 95px;
+        left: -120px;
+        width: 225px;
+        height: 175px;
+      }
+
+      &::before {
+        top: 475px;
+        left: -58px;
+        width: 110px;
+        height: 110px
       }
     }
   }

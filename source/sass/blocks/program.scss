@@ -63,15 +63,6 @@
   .submit {
     width: 100%;
     min-height: 77px;
-    background-color: transparent;
-    border: 2px solid #FFFFFF;
-    font-weight: bold;
-    font-size: 14px;
-    line-height: 19px;
-    text-align: center;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #FFFFFF;
     margin-bottom: 80px;
   }
 
@@ -119,5 +110,60 @@
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
+  }
+}
+
+@media (max-width: $hd_desktop) {
+  .program {
+    margin-bottom: 227px;
+
+    .form {
+      width: 420px;
+      padding-top: 47px;
+      padding-left: 42px;
+      padding-right: 50px;
+      background-position: 200px 15px;
+
+      .title {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      .subtitle {
+        font-size: 80px;
+        line-height: 109px;
+        margin-bottom: 20px;
+
+        .up {
+          font-size: 38px;
+          line-height: 52px;
+          margin-top: 12px;
+        }
+        .down {
+          font-size: 38px;
+          line-height: 52px;
+          margin-bottom: 12px;
+        }
+      }
+
+      .submit {
+        margin-bottom: 70px;
+      }
+    }
+
+    .program_bg {
+      width: 561px;
+      height: 483px;
+      top: 85px;
+      left: -80px;
+    }
+
+    .book {
+      width: 867px;
+      height: 759px;
+      top: -55px;
+      left: 370px;
+      background-size: cover;
+    }
   }
 }

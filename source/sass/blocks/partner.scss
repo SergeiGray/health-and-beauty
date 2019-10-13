@@ -21,6 +21,11 @@
     position: absolute;
     top: 20px;
     left: 785px;
+    width: 876px;
+    height: 562px;
+    background-image: url("../img/partner_image_hd.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
   }
 
   .partner__bg {
@@ -31,5 +36,27 @@
     width: 1814px;
     height: 1410px;
     background-color: #FCF6F3;
+  }
+}
+
+@media (max-width: $hd_desktop) {
+  .partner {
+    margin-bottom: 125px;
+
+    .partner__bg {
+      top: -275px;
+      left: -115px;
+      width: 1370px;
+      height: 1330px;
+    }
+
+    .text {
+      font-size: 15px;
+    }
+
+    .image {
+      width: 471px;
+      height: 463px;
+    }
   }
 }

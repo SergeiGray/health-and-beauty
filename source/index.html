@@ -135,7 +135,7 @@
         </ul>
         <div class="warning">
           <p class="icon">!</p>
-          <p class="text">Курс не предназначен для лечения острых состояний, он разработан для профилактики и оздоровления</p>
+          <p class="text">Курс не предназначен для лечения острых состояний, он разработан для профилактики  и оздоровления</p>
         </div>
       </div>
     </section>
@@ -233,7 +233,15 @@
         <h2 class="title">Партнер проекта – Сити Клиник</h2>
         <p class="text">В разработке курса приняли участие компетентные врачи медицинского центра Сити Клиник. Для нас важно строить курс и давать рекомендации, основываясь на методах доказательной медицины. Мы не используем сомнительные методики, которые принято называть «авторскими», и которые не имеют под собой клинической практики.</p>
         <p class="text">В нашем курсе собраны лучшие способы противодействия старения, которые много лет работают в США и Европе и только появляются в нашей стране. Задача курса — не просто продлить жизнь, но отодвинуть и замедлить возрастные изменения. Работа идет не только с внешностью, сколько изнутри. Физические упражнения, правильное питание, медицинское лечение на ранних этап — вот то, что, по мнению ведущих мировых ученых, поможет человеку дожить до 150 лет.</p>
-        <img src="img/partner_image.jpg" alt="Сити Клиник" class="image">
+        <picture>
+          <source
+            media="(min-width: 2000px)"
+            srcset="img/partner_image_hd.jpg">
+          <source
+            media="(max-width: 2000px)"
+            srcset="img/partner_image_desktop.jpg">
+          <img src="img/partner_image_hd.jpg" alt="Сити Клиник" class="image">
+        </picture>
         <div class="partner__bg"></div>
       </div>
     </section>
@@ -384,7 +392,7 @@
             <span>3</span>
             <span class="down">дня</span>
           </p>
-          <input type="email" name="E-mail" class="input" placeholder="E-mail">
+          <input type="email" name="E-mail" class="input" placeholder="E-mail" required>
           <button type="submit" class="submit">Получить на почту</button>
         </form>
         <div class="book">
@@ -513,41 +521,43 @@
     <section class="feedback">
       <div class="wrapper">
         <h2 class="title">Отзывы</h2>
-      </div>
-      <div class="feedback__slider">
-        <div class="feedback_blur"></div>
-        <ul class="feedback__slider_container">
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_1.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_2.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_3.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_4.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_1.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_2.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_3.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_4.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_1.jpg" alt="" class="image">
-          </li>
-          <li class="feedback__slider_item">
-            <img src="img/feedback/feedback_2.jpg" alt="" class="image">
-          </li>
-        </ul>
+        <div class="feedback_x-hidden">
+          <div class="feedback__slider">
+            <div class="feedback_blur"></div>
+            <ul class="feedback__slider_container">
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_1.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_2.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_3.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_4.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_1.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_2.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_3.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_4.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_1.jpg" alt="" class="image">
+              </li>
+              <li class="feedback__slider_item">
+                <img src="img/feedback/feedback_2.jpg" alt="" class="image">
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </section>
     <section class="questions">
@@ -556,23 +566,27 @@
         <div class="container">
           <ul class="list">
             <li class="item">
-              <div class="pointer"></div>
-              <h2 class="subtitle">Подойдет ли курс для новичка?</h2>
+              <h2 class="subtitle">Подойдет ли курс для новичка?
+                <div class="pointer"></div>
+              </h2>
               <p class="text">Да. Все упражнения можно делать без подготовки. Главное внимательно слушать тренера. Если что-то непонятно или не получается, всегда можно задать вопрос в личном кабинете. Рацион питания подбирается индивидуально, исходя из вашего состояния здоровья.</p>
             </li>
             <li class="item">
-              <div class="pointer"></div>
-              <h2 class="subtitle">Как записаться на курс?</h2>
+              <h2 class="subtitle">Как записаться на курс?
+                <div class="pointer"></div>
+              </h2>
               <p class="text">Запись на курс ведется через сайт. Пройдите по ссылке *** и выберите подходящий Вам тарифный план. Действует специальное предложение!</p>
             </li>
             <li class="item">
-              <div class="pointer"></div>
-              <h2 class="subtitle">Что потребуется для курса?</h2>
+              <h2 class="subtitle">Что потребуется для курса?
+                <div class="pointer"></div>
+              </h2>
               <p class="text">Ничего из того, чего нет у вас дома. Для тренировок нужен только коврик и спортивная обувь. Продукты для предлагаемого рациона можно купить в любом магазине, никакой экзотики. Мы не предлагаем покупать у нас аксессуары, косметику или БАДы.</p>
             </li>
             <li class="item">
-              <div class="pointer"></div>
-              <h2 class="subtitle">Если я заболею или уеду, можно ли приостановить участие?</h2>
+              <h2 class="subtitle">Если я заболею или уеду, можно ли приостановить участие?
+                <div class="pointer"></div>
+              </h2>
               <p class="text">Да, участие в курсе можно заморозить на срок до 7 дней.</p>
             </li>
           </ul>
@@ -587,11 +601,14 @@
         <form action="" class="form">
           <div class="row">
             <input type="text" class="input" name="Name" placeholder="Имя*">
-            <input type="email" class="input" name="E-mail" placeholder="E-mail*">
-            <button type="submit" class="button">Отправить</button>
+            <input type="email" class="input" name="E-mail" placeholder="E-mail*" required>
+            <button type="submit" class="submit up_row">Отправить</button>
           </div>
-          <input id="subscription_checkbox" type="checkbox" class="main__checkbox" name="Agreement">
-          <label for="subscription_checkbox" class="main__checkbox_label">Я даю согласие на обработку персональных данных, с <a href="" class="link">политикой конфиденциальности</a> ознакомлен</label>
+          <div class="row">
+            <button type="submit" class="submit down_row">Отправить</button>
+            <input id="subscription_checkbox" type="checkbox" class="main__checkbox" name="Agreement">
+           <label for="subscription_checkbox" class="main__checkbox_label">Я даю согласие на обработку персональных данных, с <a href="" class="link">политикой конфиденциальности</a> ознакомлен</label>
+          </div>
         </form>
       </div>
     </section>

@@ -4,41 +4,81 @@
 
   var hangFlexslider = function () {
     $(document).ready(function() {
-      $('.team__slider').flexslider({
-        selector: ".team__slider_container > li",
-        animation: "slide",
-        slideshow: false,
-        smoothHeight: true,
-        keyboard: true,
-        prevText: "",
-        nextText: "",
-        itemWidth: 1875,
-        itemMargin: 0,
-        minItems: 1,
-        maxItems: 1,
-        controlNav: false,
-        directionNav: true,
-        touch: true,
-        move: 1
-      });
+      if($(window).width() > 2000) {
+        $('.team__slider').flexslider({
+          selector: ".team__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 1875,
+          itemMargin: 0,
+          minItems: 1,
+          maxItems: 1,
+          controlNav: false,
+          directionNav: true,
+          touch: true,
+          move: 1
+        });
 
-      $('.feedback__slider').flexslider({
-        selector: ".feedback__slider_container > li",
-        animation: "slide",
-        slideshow: false,
-        smoothHeight: true,
-        keyboard: true,
-        prevText: "",
-        nextText: "",
-        itemWidth: 328,
-        itemMargin: 30,
-        minItems: 1,
-        maxItems: 5,
-        controlNav: false,
-        directionNav: true,
-        touch: true,
-        move: 1
-      });
+        $('.feedback__slider').flexslider({
+          selector: ".feedback__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 328,
+          itemMargin: 30,
+          minItems: 1,
+          maxItems: 5,
+          controlNav: false,
+          directionNav: true,
+          touch: true,
+          move: 1
+        });
+      };
+
+      if($(window).width() < 2000) {
+        $('.team__slider').flexslider({
+          selector: ".team__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 1505,
+          itemMargin: 0,
+          minItems: 1,
+          maxItems: 1,
+          controlNav: false,
+          directionNav: true,
+          touch: true,
+          move: 1
+        });
+
+        $('.feedback__slider').flexslider({
+          selector: ".feedback__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 265,
+          itemMargin: 25,
+          minItems: 1,
+          maxItems: 5,
+          controlNav: false,
+          directionNav: true,
+          touch: true,
+          move: 1
+        });
+      };
     });
   };
 
@@ -119,7 +159,7 @@
   hangFlexslider();
   getBlockQuestionsSlider();
   getTimer();
-  getStickyMenu();
+  // getStickyMenu();
   openHeaderMenu();
   closeHeaderMenu();
 

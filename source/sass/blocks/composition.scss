@@ -147,3 +147,77 @@
     background-size: cover;
   }
 }
+
+@media (max-width: $hd_desktop) {
+  .composition {
+
+    .title {
+      margin-bottom: 55px;
+
+      &::after {
+        top: -95px;
+        left: 815px;
+        font-size: 160px;
+        line-height: 218px;
+      }
+    }
+
+    .item {
+      width: 555px;
+      min-height: 413px;
+
+      .content {
+        padding: 21px 10px 10px 36px;
+      }
+
+      .subtitle {
+        font-size: 20px;
+        line-height: 200%;
+        margin-bottom: 13px;
+      }
+
+      .text {
+        width: 440px;
+        font-size: 15px;
+      }
+
+      &:nth-child(1) {
+        margin-right: 30px;
+
+        .bonus {
+          margin-top: 29px;
+          margin-bottom: 15px;
+        }
+      }
+
+      &:nth-child(2) {
+
+        .bonus {
+          margin-bottom: 15px;
+          margin-top: 50px;
+
+          .text {
+            width: 340px;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin-right: 30px;
+
+        .bonus {
+          margin-top: 28px;
+          margin-bottom: 15px;
+        }
+      }
+
+      &:nth-child(4) {
+
+        .bonus {
+          margin-top: 32px;
+          margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
