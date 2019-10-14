@@ -83,6 +83,7 @@
 
     &:nth-child(4) {
       margin-top: -4px;
+
       &::after {
         position: absolute;
         z-index: -1;
@@ -151,6 +152,7 @@
     .title {
       margin-bottom: 55px;
     }
+
     .list {
       &::after {
         top: -165px;
@@ -194,6 +196,117 @@
         width: 35px;
         height: 35px;
         margin: 0 20px 0 40px;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .benefits {
+    margin-bottom: 95px;
+
+    .title {
+      margin-bottom: 40px;
+    }
+    .list {
+      &::after {
+        top: -126px;
+        right: -180px;
+        font-size: 100px;
+        line-height: 136px;
+      }
+    }
+    .item {
+      width: 362px;
+      height: 297px;
+      padding: 42px 40px 30px 50px;
+
+      .icon {
+        top: 153px;
+        right: 43px;
+      }
+
+      &:nth-child(1) {
+        .icon {
+          width: 89px;
+          height: 89px;
+        }
+      }
+
+      &:nth-child(2) {
+        margin-right: 0;
+
+        .icon {
+          width: 99px;
+          height: 98px;
+        }
+      }
+
+      &:nth-child(3) {
+        margin-top: -4px;
+        margin-right: -4px;
+        .icon {
+          width: 95px;
+          height: 94px;
+        }
+      }
+
+      &:nth-child(4) {
+        .icon {
+          width: 94px;
+          height: 97px;
+        }
+
+        &::after {
+          top: 185px;
+          left: -387px;
+          width: 770px;
+          height: 424px;
+        }
+      }
+
+      &:nth-child(5) {
+        margin-left: 0;
+
+        .icon {
+          width: 96px;
+          height: 96px;
+        }
+      }
+
+      &:nth-child(6) {
+        .icon {
+          width: 99px;
+          height: 101px;
+        }
+      }
+
+      .subtitle {
+        margin-bottom: 12px;;
+      }
+
+      .text {
+        width: 260px;
+        font-size: 15px;
+        line-height: 200%;
+      }
+    }
+
+    .warning {
+      align-items: flex-start;
+      width: 100%;
+      height: auto;
+      margin-left: 0;
+      margin-top: 60px;
+
+      .text {
+        width: 575px;
+      }
+
+      .icon {
+        width: 35px;
+        height: 35px;
+        margin: 6px 20px 0 0;
       }
     }
   }

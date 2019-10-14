@@ -195,3 +195,22 @@
     }
   }
 }
+
+
+@media (max-width: $desktop) {
+  .feedback {
+    .title {
+      &::after {
+        top: -45px;
+        left: 390px;
+        font-size: 100px;
+        line-height: 136px;
+      }
+    }
+
+
+    .feedback_x-hidden {
+      height: 670px;
+    }
+  }
+}

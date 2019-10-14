@@ -186,7 +186,7 @@
       }
     }
 
-    &:nth-child(6) {
+    &:nth-child(7) {
       .step {
         &::after {
           content: '04';
@@ -194,7 +194,7 @@
       }
     }
 
-    &:nth-child(8) {
+    &:nth-child(9) {
       .step {
         &::after {
           content: '05';
@@ -202,7 +202,7 @@
       }
     }
 
-    &:nth-child(10) {
+    &:nth-child(11) {
       .step {
         &::after {
           content: '06';
@@ -224,6 +224,10 @@
     border-radius: 50%;
     background-color: transparent;
     margin-bottom: 30px;
+
+    &_table {
+      display: none;
+    }
 
     &::before {
       position: absolute;
@@ -425,6 +429,99 @@
         width: 358px;
         height: 88px;
         margin-top: 72px;
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .schedule {
+    margin-bottom: 165px;
+
+    .title {
+      &::after {
+        top: -30px;
+        left: 495px;
+        font-size: 100px;
+        line-height: 136px;
+      }
+    }
+
+    .schedule_bg {
+      top: 50px;
+      width: 100%;
+      height: 1350px;
+    }
+
+    .banner {
+      width: 100%;
+      flex-wrap: wrap;
+      margin-bottom: 40px;
+    }
+
+    .list {
+      margin-bottom: 33px;
+
+      .item {
+        width: 344px;
+        height: 119px;
+        padding-top: 53px;
+        margin-bottom: 25px;
+
+        &::after {
+          top: 33px;
+        }
+
+        &::before {
+          top: 33px;
+        }
+      }
+
+      .arrow {
+        &::before {
+          top: -15px;
+        }
+
+        &_desktop {
+          display: none;
+        }
+
+        &_table {
+          display: flex;
+        }
+      }
+    }
+
+    .discount {
+      flex-wrap: wrap;
+      align-content: flex-start;
+
+      .interest {
+        margin-right: 48px;
+
+        .title {
+          margin-bottom: 13px;
+        }
+      }
+
+      .timer {
+        margin-right: 0;
+
+        .timer_item {
+          width: 84px;
+
+          &:last-child {
+            margin-right: 0;
+          }
+
+          .value {
+            margin-bottom: 10px;
+          }
+        }
+      }
+
+      .button {
+        margin-top: 56px;
       }
     }
   }

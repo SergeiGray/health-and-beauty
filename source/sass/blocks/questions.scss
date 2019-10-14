@@ -192,3 +192,35 @@
     }
   }
 }
+
+@media (max-width: $desktop) {
+  .questions {
+    margin-bottom: 185px;
+
+    .title {
+      &::after {
+        top: -30px;
+        left: 435px;
+        font-size: 100px;
+        line-height: 136px;
+      }
+    }
+
+    .list {
+      width: 710px;
+      margin-right: 0;
+    }
+
+    .item {
+      width: 100%;
+
+      .text {
+        width: 640px;
+      }
+    }
+
+    .image {
+      display: none;
+    }
+  }
+}

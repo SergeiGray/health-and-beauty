@@ -9,26 +9,6 @@
   }
 }
 
-@media (min-width: $hd_desktop) {
-  .header {
-
-    .wrapper {
-      width: 1750px;
-      min-height: 96px;
-    }
-  }
-}
-
-@media (max-width: $hd_desktop) {
-.header {
-
-  .wrapper {
-      width: 1260px;
-      min-height: 70px;
-    }
-  }
-}
-
 .container {
   display: flex;
 }
@@ -42,6 +22,21 @@
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: #354F62;
+  background-color: transparent;
+  border: none;
+  box-shadow: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='25' height='16' viewBox='0 0 25 16' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M0 0H25V2H0V0ZM0 7H25V9H0V7ZM25 14H0V16H25V14Z' fill='%23354F62'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: left center;
+  cursor: pointer;
+}
+
+.menu_open_table {
+  display: none;
+  width: 25px;
+  height: 16px;
+  font-size: 12px;
+  line-height: 16px;
   background-color: transparent;
   border: none;
   box-shadow: none;
@@ -142,33 +137,86 @@
 }
 
 @media (min-width: $hd_desktop) {
-  .private_office {
-    margin-right: 86px;
+  .header {
 
-    .icon {
-      width: 15px;
-      height: 15px;
-      margin-right: 14px;
+    .wrapper {
+      width: 1750px;
+      min-height: 96px;
     }
 
-    .text {
-      font-size: 12px;
+    .private_office {
+      margin-right: 86px;
+
+      .icon {
+        width: 15px;
+        height: 15px;
+        margin-right: 14px;
+      }
+
+      .text {
+        font-size: 12px;
+      }
     }
   }
 }
 
 @media (max-width: $hd_desktop) {
-  .private_office {
-    margin-right: 15px;
+  .header {
 
-    .icon {
-      margin-right: 10px;
-      width: 15px;
-      height: 15px;
+    .wrapper {
+        width: 1260px;
+        min-height: 70px;
     }
 
-    .text {
-      font-size: 12px;
+    .private_office {
+      margin-right: 15px;
+
+      .icon {
+        margin-right: 10px;
+        width: 15px;
+        height: 15px;
+      }
+
+      .text {
+        font-size: 12px;
+      }
+    }
+
+    .stickytop {
+
+      .wrapper {
+        width: 1140px;
+        height: 70px;
+        min-height: 70px;
+      }
+
+      .header_menu {
+        .header_menu_link {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .header {
+
+    .wrapper {
+        width: 720px;
+        min-height: 70px;
+    }
+
+    .logo {
+      margin-left: 0;
+    }
+
+    .private_office {
+      display: none;
+    }
+
+    .menu_open_table {
+      display: inline-block;
     }
   }
 }

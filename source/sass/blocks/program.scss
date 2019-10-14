@@ -167,3 +167,64 @@
     }
   }
 }
+
+@media (max-width: $desktop) {
+  .program {
+    margin-bottom: 210px;
+
+    .form {
+      width: 420px;
+      padding-top: 47px;
+      padding-left: 42px;
+      padding-right: 50px;
+      background-position: 200px 15px;
+
+      .title {
+        font-size: 20px;
+        line-height: 27px;
+      }
+
+      .subtitle {
+        font-size: 80px;
+        line-height: 109px;
+        margin-bottom: 20px;
+
+        .up {
+          font-size: 38px;
+          line-height: 52px;
+          margin-top: 12px;
+        }
+        .down {
+          font-size: 38px;
+          line-height: 52px;
+          margin-bottom: 12px;
+        }
+      }
+
+      .submit {
+        margin-bottom: 70px;
+      }
+    }
+
+    .program_bg {
+      width: 561px;
+      height: 483px;
+      top: 85px;
+      left: -80px;
+    }
+
+    .book {
+      width: 615px;
+      height: 538px;
+      top: 10px;
+      left: 245px;
+
+      .link {
+        width: 71px;
+        height: 71px;
+        font-size: 13px;
+        margin-bottom: 85px;
+      }
+    }
+  }
+}

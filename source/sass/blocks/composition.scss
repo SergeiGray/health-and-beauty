@@ -42,7 +42,7 @@
     box-sizing: border-box;
     padding: 25px 23px;
     background-color: #f5efef;
-    background-image: url('../img/composition_item_bg.png');
+    background-image: url('../img/composition_item_bg_desktop.png');
     background-position: center;
     background-size: cover;
     margin-bottom: 30px;
@@ -216,6 +216,73 @@
         .bonus {
           margin-top: 32px;
           margin-bottom: 15px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .composition {
+    .title {
+      margin-bottom: 35px;
+
+      &::after {
+        top: -20px;
+        left: 495px;
+        font-size: 100px;
+        line-height: 136px;
+      }
+    }
+
+    .item {
+      width: 100%;
+      min-height: 390px;
+      background-image: url('../img/composition_item_bg_table.png');
+
+      .text {
+        width: 600px;
+      }
+
+      &:nth-child(1) {
+        margin-right: 0;
+
+        .bonus {
+          margin-top: 29px;
+        }
+      }
+
+      &:nth-child(2) {
+
+        .bonus {
+          margin-top: 90px;
+
+          .text {
+            width: 100%;
+          }
+        }
+      }
+
+      &:nth-child(3) {
+        margin-right: 0;
+
+        .bonus {
+          margin-top: 55px;
+        }
+
+        .content {
+          padding-top: 30px;
+        }
+      }
+
+      &:nth-child(4) {
+
+        .bonus {
+          margin-top: 87px;
+        }
+
+        .content {
+          padding-top: 30px;
         }
       }
     }

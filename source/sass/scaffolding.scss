@@ -50,6 +50,23 @@ body {
 @media (max-width: $hd_desktop) {
   .title {
     font-size: 46px;
+
+    &::after {
+      font-size: 160px;
+      line-height: 218px;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .title {
+    font-size: 36px;
+    line-height: 49px;
+
+    &::after {
+      font-size: 100px;
+      line-height: 136px;
+    }
   }
 }
 

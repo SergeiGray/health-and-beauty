@@ -12,35 +12,36 @@
 <body>
   <header class="header">
     <div class="wrapper">
-    <div class="container">
-      <a href="index.html" class="logo">
-        <svg class="icon" width="51" height="31">
-          <use xlink:href="img/sprite.svg#icon-logo"></use>
-        </svg>
-        <div class="col">
-          <p class="text">Совершенно</p>
-          <p class="text">Летние</p>
-        </div>
-      </a>
-      <button class="menu_open">Меню</button>
-      <nav class="header_menu">
-        <button class="menu_close"></button>
-        <a href="" class="header_menu_link">Курс поможет</a>
-        <a href="" class="header_menu_link">Кто проводит</a>
-        <a href="" class="header_menu_link">Тарифы</a>
-        <a href="" class="header_menu_link">Преимущества</a>
-        <a href="" class="header_menu_link">Что входит в курс</a>
-        <a href="" class="header_menu_link">Как проходит курс</a>
-        <a href="" class="header_menu_link">Отзывы</a>
-        <a href="" class="header_menu_link">Частые вопросы</a>
-      </nav>
-    </div>
+      <div class="container">
+        <a href="index.html" class="logo">
+          <svg class="icon" width="51" height="31">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+          <div class="col">
+            <p class="text">Совершенно</p>
+            <p class="text">Летние</p>
+          </div>
+        </a>
+        <button class="menu_open">Меню</button>
+        <nav class="header_menu">
+          <button class="menu_close"></button>
+          <a href="" class="header_menu_link">Курс поможет</a>
+          <a href="" class="header_menu_link">Кто проводит</a>
+          <a href="" class="header_menu_link">Тарифы</a>
+          <a href="" class="header_menu_link">Преимущества</a>
+          <a href="" class="header_menu_link">Что входит в курс</a>
+          <a href="" class="header_menu_link">Как проходит курс</a>
+          <a href="" class="header_menu_link">Отзывы</a>
+          <a href="" class="header_menu_link">Частые вопросы</a>
+        </nav>
+      </div>
       <a href="" class="private_office">
         <svg class="icon" width="15" height="15">
           <use xlink:href="img/sprite.svg#icon-login"></use>
         </svg>
         <p class="text">Личный кабинет</p>
       </a>
+      <button class="menu_open_table"></button>
     </div>
   </header>
   <main>
@@ -238,8 +239,12 @@
             media="(min-width: 2000px)"
             srcset="img/partner_image_hd.jpg">
           <source
+            media="(max-width: 1270px)"
+            srcset="img/partner_image_table.jpg">
+          <source
             media="(max-width: 2000px)"
             srcset="img/partner_image_desktop.jpg">
+
           <img src="img/partner_image_hd.jpg" alt="Сити Клиник" class="image">
         </picture>
         <div class="partner__bg"></div>
@@ -256,12 +261,18 @@
             <div class="content">
               <p class="subtitle">Что входит в программу</p>
               <ul class="structure">
-                <li class="text">Программа питания в соответствии  <br>с вашими параметрами и целями</li>
-                <li class="text">Программа видео тренировок для дома  <br>с разминкой и растяжкой</li>
-                <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
-                <li class="text">Консультации тренера-эксперта</li>
-                <li class="text">Рекомендации диетолога</li>
-                <li class="text">Общение с участниками в отдельном <br>чате</li>
+                <div class="structure_first_container">
+                  <li class="text">Программа питания в соответствии
+                   <br>с вашими параметрами и целями</li>
+                  <li class="text">Программа видео тренировок для дома
+                   <br>с разминкой и растяжкой</li>
+                  <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                </div>
+                <div>
+                  <li class="text">Консультации тренера-эксперта</li>
+                  <li class="text">Рекомендации диетолога</li>
+                  <li class="text">Общение с участниками в отдельном <br>чате</li>
+                </div>
                 <li class="text inactive">Рекомендации гинеколога-эндокринолога</li>
                 <li class="text inactive">Рекомендации дерматолога-косметолога</li>
                 <li class="text inactive">Рекомендации невролога</li>
@@ -284,15 +295,21 @@
             <div class="content">
               <p class="subtitle">Что входит в программу</p>
               <ul class="structure">
-                <li class="text">Программа питания в соответствии  <br>с вашими параметрами и целями</li>
-                <li class="text">Программа видео тренировок для дома  <br>с разминкой и растяжкой</li>
-                <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
-                <li class="text">Консультации тренера-эксперта</li>
-                <li class="text">Рекомендации диетолога</li>
-                <li class="text">Общение с участниками в отдельном <br>чате</li>
-                <li class="text">Рекомендации гинеколога-эндокринолога</li>
-                <li class="text">Рекомендации дерматолога-косметолога</li>
-                <li class="text">Рекомендации невролога</li>
+                <div class="structure_first_container">
+                  <li class="text">Программа питания в соответствии
+                   <br>с вашими параметрами и целями</li>
+                  <li class="text">Программа видео тренировок для дома
+                   <br>с разминкой и растяжкой</li>
+                  <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                  <li class="text">Консультации тренера-эксперта</li>
+                </div>
+                <div>
+                  <li class="text">Рекомендации диетолога</li>
+                  <li class="text">Общение с участниками в отдельном <br>чате</li>
+                  <li class="text">Рекомендации гинеколога-эндокринолога</li>
+                  <li class="text">Рекомендации дерматолога-косметолога</li>
+                  <li class="text">Рекомендации невролога</li>
+                </div>
                 <li class="text inactive">Доступ к материалам курса в течение 1 месяцев после завершения</li>
                 <li class="text inactive">Возможность задать вопрос всем специалистам в течение 1 месяца</li>
                 <li class="text inactive">Персональные скидки на очный прием в Сити Клиник</li>
@@ -312,19 +329,25 @@
             <div class="content">
               <p class="subtitle">Что входит в программу</p>
               <ul class="structure">
-                <li class="text">Программа питания в соответствии  <br>с вашими параметрами и целями</li>
-                <li class="text">Программа видео тренировок для дома  <br>с разминкой и растяжкой</li>
-                <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
-                <li class="text">Консультации тренера-эксперта</li>
-                <li class="text">Рекомендации диетолога</li>
-                <li class="text">Общение с участниками в отдельном <br>чате</li>
-                <li class="text">Рекомендации гинеколога-эндокринолога</li>
-                <li class="text">Рекомендации дерматолога-косметолога</li>
-                <li class="text">Рекомендации невролога</li>
-                <li class="text">Доступ к материалам курса в течение 1 месяцев после завершения</li>
-                <li class="text">Возможность задать вопрос всем специалистам в течение 1 месяца</li>
-                <li class="text">Персональные скидки на очный прием в Сити Клиник</li>
-                <li class="text">Персональные скидки на телемедицину</li>
+                <div class="structure_first_container">
+                  <li class="text">Программа питания в соответствии
+                   <br>с вашими параметрами и целями</li>
+                  <li class="text">Программа видео тренировок для дома
+                   <br>с разминкой и растяжкой</li>
+                  <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                  <li class="text">Консультации тренера-эксперта</li>
+                  <li class="text">Рекомендации диетолога</li>
+                  <li class="text">Общение с участниками в отдельном <br>чате</li>
+                </div>
+                <div>
+                  <li class="text">Рекомендации гинеколога-эндокринолога</li>
+                  <li class="text">Рекомендации дерматолога-косметолога</li>
+                  <li class="text">Рекомендации невролога</li>
+                  <li class="text">Доступ к материалам курса в течение 1 месяцев после завершения</li>
+                  <li class="text">Возможность задать вопрос всем специалистам в течение 1 месяца</li>
+                  <li class="text">Персональные скидки на очный прием в Сити Клиник</li>
+                  <li class="text">Персональные скидки на телемедицину</li>
+                </div>
               </ul>
               <p class="price">
                 <span>12 000 руб.</span>
@@ -484,16 +507,17 @@
             <p class="step">Шаг 2.</p>
             <p class="text">Заполняете анкету.</p>
           </li>
-          <li class="arrow"></li>
+          <li class="arrow arrow_desktop"></li>
           <li class="item">
             <p class="step">Шаг 3.</p>
             <p class="text">Получаете программу питания и тренировок.</p>
           </li>
+          <li class="arrow arrow_table"></li>
           <li class="item">
             <p class="step">Шаг 4.</p>
             <p class="text">Консультируетесь со специалистами.</p>
           </li>
-          <li class="arrow"></li>
+          <li class="arrow arrow_desktop"></li>
           <li class="item">
             <p class="step">Шаг 5.</p>
             <p class="text">Выполняете программу, общаетесь с сокурсниками.</p>

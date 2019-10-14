@@ -128,14 +128,27 @@
   };
 
   var getStickyMenu = function () {
-    $(window).scroll(function() {
-      if($(this).scrollTop() >= 800) {
-          $('.header').addClass('stickytop');
-      }
-      else{
-          $('.header').removeClass('stickytop');
-      }
-    });
+    if($(window).width() > 2000) {
+      $(window).scroll(function() {
+        if($(this).scrollTop() >= 800) {
+            $('.header').addClass('stickytop');
+        }
+        else{
+            $('.header').removeClass('stickytop');
+        }
+      });
+    };
+
+    if($(window).width() < 2000 && $(window).width() > 1270) {
+      $(window).scroll(function() {
+        if($(this).scrollTop() >= 610) {
+            $('.header').addClass('stickytop');
+        }
+        else{
+            $('.header').removeClass('stickytop');
+        }
+      });
+    };
   };
 
   var openHeaderMenu = function () {
@@ -159,7 +172,7 @@
   hangFlexslider();
   getBlockQuestionsSlider();
   getTimer();
-  // getStickyMenu();
+  getStickyMenu();
   openHeaderMenu();
   closeHeaderMenu();
 

@@ -103,3 +103,35 @@
     }
   }
 }
+
+@media (max-width: $desktop) {
+  .subscription {
+    padding-top: 55px;
+    background-size: 180px 160px;
+    background-position: 100% 25%;
+
+    .wrapper {
+      box-sizing: border-box;
+      padding-left: 35px;
+    }
+
+    .title {
+      margin-bottom: 23px;
+    }
+
+    .input {
+      width: 313px;
+    }
+
+    .row {
+
+      .main__checkbox_label {
+        width: 260px;
+      }
+
+      .down_row {
+        width: 313px;
+      }
+    }
+  }
+}

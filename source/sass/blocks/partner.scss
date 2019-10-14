@@ -23,9 +23,9 @@
     left: 785px;
     width: 876px;
     height: 562px;
-    background-image: url("../img/partner_image_hd.jpg");
-    background-repeat: no-repeat;
-    background-size: cover;
+    // background-image: url("../img/partner_image_hd.jpg");
+    // background-repeat: no-repeat;
+    // background-size: cover;
   }
 
   .partner__bg {
@@ -57,6 +57,39 @@
     .image {
       width: 471px;
       height: 463px;
+    }
+  }
+}
+
+@media (max-width: $desktop) {
+  .partner {
+    margin-bottom: 65px;
+
+    .title {
+      margin-bottom: 35px;
+    }
+
+    .partner__bg {
+      top: -325px;
+      left: -25px;
+      width: 770px;
+      height: 1540px;
+    }
+
+    .text {
+      font-size: 15px;
+
+      &:last-of-type {
+        margin-bottom: 49px;
+      }
+    }
+
+    .image {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 717px;
+      height: 322px;
     }
   }
 }
