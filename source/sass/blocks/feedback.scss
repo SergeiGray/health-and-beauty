@@ -10,12 +10,11 @@
     &::after {
       z-index: -1;
       position: absolute;
+      width: 865px;
       top: -60px;
       left: 570px;
       content: 'Отзывы';
       font-weight: 900;
-      font-size: 210px;
-      line-height: 284px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: transparent;
@@ -139,14 +138,13 @@
   }
 }
 
-@media (max-width: $hd_desktop) {
+@media (max-width: $desktop) {
   .feedback {
 
     .title {
 
       &::after {
-        font-size: 160px;
-        line-height: 218px;
+        width: 600px;
         top: -70px;
         left: 575px;
       }
@@ -173,7 +171,7 @@
       left: -15px;
       padding-top: 55px;
       padding-left: 20px;
-      width: 1280px;
+      width: 1175px;
       height: 722px;
       margin-bottom: 0;
     }
@@ -197,20 +195,79 @@
 }
 
 
-@media (max-width: $desktop) {
+@media (max-width: $tablet) {
   .feedback {
+
     .title {
       &::after {
+        width: 365px;
         top: -45px;
         left: 390px;
-        font-size: 100px;
-        line-height: 136px;
       }
     }
 
+    .feedback_blur {
+      display: none;
+    }
 
     .feedback_x-hidden {
+      width: 750px;
       height: 670px;
+    }
+
+    .feedback__slider {
+      width: 750px;
+      justify-content: flex-start;
+
+      .flex-viewport {
+        width: 750px;
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .feedback {
+    .feedback_x-hidden {
+      padding-top: 25px;
+      padding-left: 15px;
+      width: auto;
+      height: 510px;
+    }
+
+    .feedback__slider_item {
+      width: 242px;
+      height: 429px;
+      margin-right: 20px;
+    }
+
+    .image {
+      position: static;
+      width: 242px;
+      height: 429px;
+
+      &:hover {
+        top: auto;
+        left: auto;
+        width: 242px;
+        height: 429px;
+      }
+    }
+
+    .feedback_blur {
+      display: none;
+    }
+
+    .feedback__slider {
+      justify-content: flex-start;
+
+      .flex-viewport {
+        width: 305px;
+      }
+
+      .flex-direction-nav {
+        display: none;
+      }
     }
   }
 }

@@ -42,6 +42,46 @@
         });
       };
 
+      if($(window).width() < 750) {
+        $('.feedback__slider').flexslider({
+          selector: ".feedback__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 242,
+          itemMargin: 20,
+          minItems: 1,
+          maxItems: 5,
+          controlNav: false,
+          directionNav: true,
+          touch: true,
+          move: 1
+        });
+      };
+
+      if($(window).width() < 1270) {
+        $('.team__slider').flexslider({
+          selector: ".team__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemWidth: 715,
+          itemMargin: 0,
+          minItems: 1,
+          maxItems: 1,
+          controlNav: false,
+          directionNav: true,
+          touch: true,
+          move: 1
+        });
+      };
+
       if($(window).width() < 2000) {
         $('.team__slider').flexslider({
           selector: ".team__slider_container > li",
@@ -80,6 +120,15 @@
         });
       };
     });
+  };
+
+  var scrollBarСustomization = function () {
+    if($(window).width() > 750) {
+      $('body').niceScroll({
+        cursorborder: "none",
+        horizrailenabled: false
+      });
+    };
   };
 
   var getBlockQuestionsSlider = function () {
@@ -141,39 +190,142 @@
 
     if($(window).width() < 2000 && $(window).width() > 1270) {
       $(window).scroll(function() {
-        if($(this).scrollTop() >= 610) {
+        if($(this).scrollTop() >= 630) {
             $('.header').addClass('stickytop');
+            $('.landing').css('margin-top', '70px');
         }
         else{
-            $('.header').removeClass('stickytop');
+          $('.stickytop .logo').removeClass('display_off');
+          $('.stickytop .menu_open').removeClass('display_off');
+          $('.stickytop .header_menu').removeClass('display_on');
+          $('.header').removeClass('stickytop');
+          $('.landing').css('margin-top', '0');
         }
       });
     };
   };
 
-  var openHeaderMenu = function () {
-    $('.menu_open').click( function (evt) {
-      evt.preventDefault();
-      $('.stickytop .logo').addClass('display_off');
-      $('.stickytop .menu_open').addClass('display_off');
-      $('.stickytop .header_menu').addClass('display_on');
-    });
+  var showMenu = function () {
+    if($(window).width() > 1270) {
+      $('.menu_open').click( function (evt) {
+        evt.preventDefault();
+        $('.stickytop .logo').addClass('display_off');
+        $('.stickytop .menu_open').addClass('display_off');
+        $('.stickytop .header_menu').addClass('display_on');
+      });
+
+      $('.menu_close').click( function (evt) {
+        evt.preventDefault();
+        $('.stickytop .logo').removeClass('display_off');
+        $('.stickytop .menu_open').removeClass('display_off');
+        $('.stickytop .header_menu').removeClass('display_on');
+      });
+    };
+    if($(window).width() < 1270) {
+      $('.menu_close, .overlay, .header_menu_link').click(function (){
+          $('.header_menu').removeClass('popup_menu');
+          $('.overlay').css({'opacity': 0, 'display': 'none'});
+      });
+      $('.menu_open_table').click(function (event){
+        event.preventDefault();
+        $('.header_menu').addClass('popup_menu');
+        $('.overlay').css({'opacity': 1, 'display': 'flex'});
+        $(document).keydown(function(event) {
+            if (event.keyCode === 27) {
+                event.stopPropagation();
+                $('.header_menu').removeClass('popup_menu');
+                $('.overlay').css({'opacity': 0, 'display': 'none'});
+            }
+        });
+      });
+    };
   };
 
-  var closeHeaderMenu = function () {
-    $('.menu_close').click( function (evt) {
-      evt.preventDefault();
-      $('.stickytop .logo').removeClass('display_off');
-      $('.stickytop .menu_open').removeClass('display_off');
-      $('.stickytop .header_menu').removeClass('display_on');
+  var getSmoothScrolling = function () {
+    if($(window).width() > 1270) {
+      $('a[href="#benefits"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#benefits').offset().top - 100 }, 1000);
+      });
+      $('a[href="#team"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#team').offset().top - 100 }, 1000);
+      });
+      $('a[href="#tariff"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#tariff').offset().top - 100 }, 1000);
+      });
+      $('a[href="#advantage"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#advantage').offset().top - 100 }, 1000);
+      });
+      $('a[href="#composition"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#composition').offset().top - 100 }, 1000);
+      });
+      $('a[href="#schedule"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#schedule').offset().top }, 1000);
+      });
+      $('a[href="#feedback"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#feedback').offset().top - 100 }, 1000);
+      });
+      $('a[href="#questions"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#questions').offset().top - 100 }, 1000);
+      });
+    };
+    if($(window).width() < 1270) {
+      $('a[href="#benefits"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#benefits').offset().top }, 1000);
+      });
+      $('a[href="#team"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#team').offset().top }, 1000);
+      });
+      $('a[href="#tariff"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#tariff').offset().top }, 1000);
+      });
+      $('a[href="#advantage"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#advantage').offset().top }, 1000);
+      });
+      $('a[href="#composition"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#composition').offset().top }, 1000);
+      });
+      $('a[href="#schedule"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#schedule').offset().top + 100}, 1000);
+      });
+      $('a[href="#feedback"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#feedback').offset().top }, 1000);
+      });
+      $('a[href="#questions"]').click(function(event){
+        event.preventDefault();
+        $('html,body').stop().animate({ scrollTop: $('#questions').offset().top }, 1000);
+      });
+    };
+  };
+
+  var getValidityMessage = function () {
+    $.validate({
+      errorElementClass: 'sending_error',
+      onError : function($form) { $('.sending_error').attr('placeholder', 'Введите почту'); }
     });
   };
 
   hangFlexslider();
+  scrollBarСustomization();
   getBlockQuestionsSlider();
   getTimer();
   getStickyMenu();
-  openHeaderMenu();
-  closeHeaderMenu();
+  showMenu();
+  getSmoothScrolling();
+  getValidityMessage();
 
 }());

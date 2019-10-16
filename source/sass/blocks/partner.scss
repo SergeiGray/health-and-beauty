@@ -23,9 +23,6 @@
     left: 785px;
     width: 876px;
     height: 562px;
-    // background-image: url("../img/partner_image_hd.jpg");
-    // background-repeat: no-repeat;
-    // background-size: cover;
   }
 
   .partner__bg {
@@ -39,14 +36,14 @@
   }
 }
 
-@media (max-width: $hd_desktop) {
+@media (max-width: $desktop) {
   .partner {
     margin-bottom: 125px;
 
     .partner__bg {
       top: -275px;
-      left: -115px;
-      width: 1370px;
+      left: -85px;
+      width: 1260px;
       height: 1330px;
     }
 
@@ -55,13 +52,13 @@
     }
 
     .image {
-      width: 471px;
-      height: 463px;
+      width: 390px;
+      height: 410px;
     }
   }
 }
 
-@media (max-width: $desktop) {
+@media (max-width: $tablet) {
   .partner {
     margin-bottom: 65px;
 
@@ -90,6 +87,40 @@
       left: 0;
       width: 717px;
       height: 322px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .partner {
+    margin-bottom: 45px;
+
+    .title {
+      font-size: 22px;
+      line-height: 161%;
+      margin-bottom: 13px;
+    }
+
+    .picture {
+      display: none;
+    }
+
+    .text {
+      width: 290px;
+      font-size: 14px;
+      line-height: 200%;
+      margin-bottom: 11px;
+
+      &:last-of-type {
+        margin-bottom: 20px;
+      }
+    }
+
+    .partner__bg {
+      top: -75px;
+      left: -15px;
+      width: 320px;
+      height: 1275px;
     }
   }
 }

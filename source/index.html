@@ -25,17 +25,23 @@
         <button class="menu_open">Меню</button>
         <nav class="header_menu">
           <button class="menu_close"></button>
-          <a href="" class="header_menu_link">Курс поможет</a>
-          <a href="" class="header_menu_link">Кто проводит</a>
-          <a href="" class="header_menu_link">Тарифы</a>
-          <a href="" class="header_menu_link">Преимущества</a>
-          <a href="" class="header_menu_link">Что входит в курс</a>
-          <a href="" class="header_menu_link">Как проходит курс</a>
-          <a href="" class="header_menu_link">Отзывы</a>
-          <a href="" class="header_menu_link">Частые вопросы</a>
+          <a href="#benefits" class="header_menu_link">Курс поможет</a>
+          <a href="#team" class="header_menu_link">Кто проводит</a>
+          <a href="#tariff" class="header_menu_link">Тарифы</a>
+          <a href="#advantage" class="header_menu_link">Преимущества</a>
+          <a href="#composition" class="header_menu_link">Что входит в курс</a>
+          <a href="#schedule" class="header_menu_link">Как проходит курс</a>
+          <a href="#feedback" class="header_menu_link">Отзывы</a>
+          <a href="#questions" class="header_menu_link">Частые вопросы</a>
+          <a href="index.html" class="private_office">
+            <svg class="icon" width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+            <p class="text">Личный кабинет</p>
+          </a>
         </nav>
       </div>
-      <a href="" class="private_office">
+      <a href="index.html" class="private_office">
         <svg class="icon" width="15" height="15">
           <use xlink:href="img/sprite.svg#icon-login"></use>
         </svg>
@@ -53,41 +59,41 @@
             <span>Красота <br> и здоровье</span>
           </h1>
           <p class="text">Продлите молодость с помощью специальных тренировок и особой системы питания. Похудейте и предотвратите развитие возрастных заболеваний. Задайте врачам вопросы, которые вас волнуют.</p>
-          <a href="" class="button">Попробовать</a>
+          <a href="index.html" class="button">Попробовать</a>
         </div>
         <div class="image">
         </div>
         <nav class="menu">
           <ul class="list">
             <li class="item">
-              <a href="" class="link">Курс поможет</a>
+              <a href="#benefits" class="link">Курс поможет</a>
             </li>
             <li class="item">
-              <a href="" class="link">Кто проводит</a>
+              <a href="#team" class="link">Кто проводит</a>
             </li>
             <li class="item">
-              <a href="" class="link">Тарифы</a>
+              <a href="#tariff" class="link">Тарифы</a>
             </li>
             <li class="item">
-              <a href="" class="link">Преимущества</a>
+              <a href="#advantage" class="link">Преимущества</a>
             </li>
             <li class="item">
-              <a href="" class="link">Что входит в курс</a>
+              <a href="#composition" class="link">Что входит в курс</a>
             </li>
             <li class="item">
-              <a href="" class="link">Как проходит курс</a>
+              <a href="#schedule" class="link">Как проходит курс</a>
             </li>
             <li class="item">
-              <a href="" class="link">Отзывы</a>
+              <a href="#feedback" class="link">Отзывы</a>
             </li>
             <li class="item">
-              <a href="" class="link">Частые вопросы</a>
+              <a href="#questions" class="link">Частые вопросы</a>
             </li>
           </ul>
         </nav>
       </div>
     </section>
-    <section class="benefits">
+    <section class="benefits" id="benefits">
       <div class="wrapper">
         <h2 class="title">Курс поможет</h2>
         <ul class="list">
@@ -140,7 +146,7 @@
         </div>
       </div>
     </section>
-    <section class="team">
+    <section class="team" id="team">
       <div class="wrapper">
         <h2 class="title">Кто проводит</h2>
       </div>
@@ -234,7 +240,7 @@
         <h2 class="title">Партнер проекта – Сити Клиник</h2>
         <p class="text">В разработке курса приняли участие компетентные врачи медицинского центра Сити Клиник. Для нас важно строить курс и давать рекомендации, основываясь на методах доказательной медицины. Мы не используем сомнительные методики, которые принято называть «авторскими», и которые не имеют под собой клинической практики.</p>
         <p class="text">В нашем курсе собраны лучшие способы противодействия старения, которые много лет работают в США и Европе и только появляются в нашей стране. Задача курса — не просто продлить жизнь, но отодвинуть и замедлить возрастные изменения. Работа идет не только с внешностью, сколько изнутри. Физические упражнения, правильное питание, медицинское лечение на ранних этап — вот то, что, по мнению ведущих мировых ученых, поможет человеку дожить до 150 лет.</p>
-        <picture>
+        <picture class="picture">
           <source
             media="(min-width: 2000px)"
             srcset="img/partner_image_hd.jpg">
@@ -250,7 +256,7 @@
         <div class="partner__bg"></div>
       </div>
     </section>
-    <section class="tariff">
+    <section class="tariff" id="tariff">
       <div class="wrapper">
         <h2 class="title">Тарифы</h2>
         <ul class="list">
@@ -262,16 +268,14 @@
               <p class="subtitle">Что входит в программу</p>
               <ul class="structure">
                 <div class="structure_first_container">
-                  <li class="text">Программа питания в соответствии
-                   <br>с вашими параметрами и целями</li>
-                  <li class="text">Программа видео тренировок для дома
-                   <br>с разминкой и растяжкой</li>
-                  <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                  <li class="text">Программа питания в соответствии с вашими параметрами и целями</li>
+                  <li class="text">Программа видео тренировок для дома с разминкой и растяжкой</li>
+                  <li class="text">Доступ к базе из более чем 350 рецептов (как, что и сколько готовить)</li>
                 </div>
                 <div>
                   <li class="text">Консультации тренера-эксперта</li>
                   <li class="text">Рекомендации диетолога</li>
-                  <li class="text">Общение с участниками в отдельном <br>чате</li>
+                  <li class="text">Общение с участниками в отдельном чате</li>
                 </div>
                 <li class="text inactive">Рекомендации гинеколога-эндокринолога</li>
                 <li class="text inactive">Рекомендации дерматолога-косметолога</li>
@@ -285,7 +289,7 @@
                 <span>3 900 руб.</span>
                 <span class="old_price">4 500 руб.</span>
               </p>
-              <a href="" class="button">Записаться</a>
+              <a href="index.html" class="button">Записаться</a>
             </div>
           </li>
           <li class="item">
@@ -297,15 +301,15 @@
               <ul class="structure">
                 <div class="structure_first_container">
                   <li class="text">Программа питания в соответствии
-                   <br>с вашими параметрами и целями</li>
+                   с вашими параметрами и целями</li>
                   <li class="text">Программа видео тренировок для дома
-                   <br>с разминкой и растяжкой</li>
-                  <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                   с разминкой и растяжкой</li>
+                  <li class="text">Доступ к базе из более чем 350 рецептов (как, что и сколько готовить)</li>
                   <li class="text">Консультации тренера-эксперта</li>
                 </div>
                 <div>
                   <li class="text">Рекомендации диетолога</li>
-                  <li class="text">Общение с участниками в отдельном <br>чате</li>
+                  <li class="text">Общение с участниками в отдельном чате</li>
                   <li class="text">Рекомендации гинеколога-эндокринолога</li>
                   <li class="text">Рекомендации дерматолога-косметолога</li>
                   <li class="text">Рекомендации невролога</li>
@@ -319,7 +323,7 @@
                 <span>6 400 руб.</span>
                 <span class="old_price">8 000 руб.</span>
               </p>
-              <a href="" class="button">Записаться</a>
+              <a href="index.html" class="button">Записаться</a>
             </div>
           </li>
           <li class="item">
@@ -331,13 +335,13 @@
               <ul class="structure">
                 <div class="structure_first_container">
                   <li class="text">Программа питания в соответствии
-                   <br>с вашими параметрами и целями</li>
+                   с вашими параметрами и целями</li>
                   <li class="text">Программа видео тренировок для дома
-                   <br>с разминкой и растяжкой</li>
-                  <li class="text">Доступ к базе из более чем 350 <br>рецептов (как, что и сколько готовить)</li>
+                   с разминкой и растяжкой</li>
+                  <li class="text">Доступ к базе из более чем 350 рецептов (как, что и сколько готовить)</li>
                   <li class="text">Консультации тренера-эксперта</li>
                   <li class="text">Рекомендации диетолога</li>
-                  <li class="text">Общение с участниками в отдельном <br>чате</li>
+                  <li class="text">Общение с участниками в отдельном чате</li>
                 </div>
                 <div>
                   <li class="text">Рекомендации гинеколога-эндокринолога</li>
@@ -353,7 +357,7 @@
                 <span>12 000 руб.</span>
                 <span class="old_price">15 000 руб.</span>
               </p>
-              <a href="" class="button">Записаться</a>
+              <a href="index.html" class="button">Записаться</a>
             </div>
           </li>
         </ul>
@@ -369,7 +373,7 @@
         </div>
       </div>
     </section>
-    <section class="advantage">
+    <section class="advantage" id="advantage">
       <div class="wrapper">
         <h2 class="title">Преимущества курса</h2>
         <ul class="list">
@@ -406,25 +410,25 @@
         </ul>
       </div>
     </section>
-    <section class="program">
+    <section class="program" id="program">
       <div class="wrapper">
-        <form action="" class="form">
-          <p class="title">Получи бесплатную программу питания</p>
+        <form action="URL" class="form">
+          <h2 class="title">Получи бесплатную программу питания</h2>
           <p class="subtitle">
             <span class="up">на</span>
             <span>3</span>
             <span class="down">дня</span>
           </p>
-          <input type="email" name="E-mail" class="input" placeholder="E-mail" required>
+          <input type="email" name="E-mail" class="input" placeholder="E-mail" data-validation="email" data-validation-error-msg=" ">
           <button type="submit" class="submit">Получить на почту</button>
         </form>
         <div class="book">
-          <a href="" class="link">PDF</a>
+          <a href="index.html" class="link">PDF</a>
         </div>
         <div class="program_bg"></div>
       </div>
     </section>
-    <section class="composition">
+    <section class="composition" id="composition">
       <div class="wrapper">
         <h2 class="title">Что входит в курс</h2>
         <ul class="list">
@@ -467,7 +471,7 @@
           <li class="item">
             <div class="content">
               <p class="subtitle">Консультации специалистов</p>
-              <p class="text">В личном кабинете курса можно задать вопросы врачам: диетологу, гинекологу-эндокринологу, неврологу, дерматологу-косметологу. Если что-то беспокоит в состоянии здоровья, можно спросить сразу, а не ждать записи в поликлинику.</p>
+              <p class="text">В личном кабинете курса можно задать вопросы врачам: диетологу, гинекологу&#8209эндокринологу, неврологу, дерматологу&#8209косметологу. Если что-то беспокоит в состоянии здоровья, можно спросить сразу, а не ждать записи в поликлинику.</p>
               <div class="bonus">
                 <p class="icon">!</p>
                 <p class="text">Современные методы мировой медицины</p>
@@ -478,7 +482,7 @@
         <div class="composition_bg"></div>
       </div>
     </section>
-    <section class="schedule">
+    <section class="schedule" id="schedule">
       <div class="wrapper">
         <h2 class="title">Как проходит курс</h2>
         <ul class="banner">
@@ -499,7 +503,7 @@
           <li class="item">
             <p class="step">Шаг 1.</p>
             <p class="text">
-              <a href="">Регистрируетесь</a> на сайте.
+              <a href="index.html">Регистрируетесь</a> на сайте.
             </p>
           </li>
           <li class="arrow"></li>
@@ -532,17 +536,22 @@
         <div class="discount">
           <div class="interest">
             <p class="title">Воспользуйся скидкой</p>
-            <img src="img/interest_image.png" alt="20%" class="image">
+            <picture class="picture">
+              <source
+                media="(max-width: 750px)"
+                srcset="img/interest_image_mobile.png">
+                <img src="img/interest_image.png" alt="20%" class="image">
+             </picture>
           </div>
           <div class="timer">
             <p class="title">До конца акции осталось</p>
             <div class="timer_container" data-timer="2019, 11, 10, 0, 0, 0"></div>
           </div>
-          <a href="index.html" class="button">Записаться со скидкой 20%</a>
+          <a href="index.html" class="button">Записаться <span>со скидкой 20%</span></a>
         </div>
       </div>
     </section>
-    <section class="feedback">
+    <section class="feedback" id="feedback">
       <div class="wrapper">
         <h2 class="title">Отзывы</h2>
         <div class="feedback_x-hidden">
@@ -584,7 +593,7 @@
         </div>
       </div>
     </section>
-    <section class="questions">
+    <section class="questions" id="questions">
       <div class="wrapper">
         <h2 class="title">Частые вопросы</h2>
         <div class="container">
@@ -618,25 +627,25 @@
         </div>
       </div>
     </section>
-    <section class="subscription">
+    <section class="subscription" id="subscription">
       <div class="wrapper">
         <h2 class="title">Будь в курсе событий!</h2>
         <p class="text">Подпишиь на нашу рассылку, обещаем не спамить</p>
-        <form action="" class="form">
+        <form action="URL" class="form">
           <div class="row">
             <input type="text" class="input" name="Name" placeholder="Имя*">
-            <input type="email" class="input" name="E-mail" placeholder="E-mail*" required>
+            <input type="email" class="input" name="E-mail" placeholder="E-mail*" data-validation="email" data-validation-error-msg=" ">
             <button type="submit" class="submit up_row">Отправить</button>
           </div>
           <div class="row">
             <button type="submit" class="submit down_row">Отправить</button>
-            <input id="subscription_checkbox" type="checkbox" class="main__checkbox" name="Agreement">
-           <label for="subscription_checkbox" class="main__checkbox_label">Я даю согласие на обработку персональных данных, с <a href="" class="link">политикой конфиденциальности</a> ознакомлен</label>
+            <input id="subscription_checkbox" type="checkbox" class="main__checkbox" name="Agreement" required>
+           <label for="subscription_checkbox" class="main__checkbox_label">Я даю согласие на обработку персональных данных, с <a href="index.html" class="link">политикой конфиденциальности</a> ознакомлен</label>
           </div>
         </form>
       </div>
     </section>
-
+    <div class="overlay"></div>
   </main>
   <footer class="footer">
     <div class="wrapper">
@@ -650,13 +659,13 @@
         </div>
       </a>
       <p class="text">ООО «Красота и здоровье», 2019 ©</p>
-      <a href="" class="text">Политика конфиденциальности</a>
+      <a href="index.html" class="text">Политика конфиденциальности</a>
     </div>
   </footer>
 
   <script src="js/jquery-3.4.1.min.js"></script>
   <script src="js/jquery.nicescroll.min.js"></script>
-  <script src="js/select2.min.js"></script>
+  <script src="js/jquery.form-validator.min.js"></script>
   <script src="js/jquery.countdown.min.js"></script>
   <script src="js/jquery.countdown-ru.js"></script>
   <script src="js/svgxuse.min.js"></script>

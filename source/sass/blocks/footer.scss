@@ -37,10 +37,29 @@
   display: flex !important;
 }
 
-@media (max-width: $hd_desktop) {
+@media (max-width: $desktop) {
   .footer {
     .wrapper {
       height: 130px;
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .footer {
+    .wrapper {
+      height: auto;
+      min-height: 165px;
+      flex-direction: column;
+      justify-content: space-around;
+    }
+
+    .logo {
+      margin-right: 0;
+    }
+
+    .text {
+      font-size: 12px;
     }
   }
 }

@@ -59,6 +59,26 @@
   cursor: pointer;
 }
 
+.private_office {
+  z-index: 1;
+  display: flex;
+  text-decoration: none;
+  margin-right: 4.4vw;
+
+  .icon {
+    margin-right: 0.7vw;
+    width: 0.9vw;
+    height: 0.8vw;
+  }
+
+  .text {
+    font-size: 0.6vw;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #354F62;
+  }
+}
+
 .header_menu {
   display: none;
 
@@ -74,6 +94,41 @@
     &:hover {
       color: #E59292;
     }
+  }
+
+  .private_office {
+    display: none;
+  }
+}
+
+.popup_menu {
+  z-index: 12;
+  position: fixed;
+  top: 0;
+  right: 0;
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
+  height: 100vh;
+  width: 50vw;
+  padding-top: 108px;
+  padding-left: 14%;
+  background-color: #FCF6F3;
+  box-shadow: -20px 0px 30px rgba(0, 0, 0, 0.1);
+
+  .menu_close {
+    position: absolute;
+    top: 27px;
+    right: 0;
+  }
+
+  .header_menu_link {
+    margin-bottom: 30px;
+  }
+
+  .private_office {
+    display: flex;
+    margin-top: 10%;
   }
 }
 
@@ -116,28 +171,9 @@
   }
 }
 
-.private_office {
-  z-index: 1;
-  display: flex;
-  text-decoration: none;
-  margin-right: 4.4vw;
-
-  .icon {
-    margin-right: 0.7vw;
-    width: 0.9vw;
-    height: 0.8vw;
-  }
-
-  .text {
-    font-size: 0.6vw;
-    letter-spacing: 0.06em;
-    text-transform: uppercase;
-    color: #354F62;
-  }
-}
-
-@media (min-width: $hd_desktop) {
+@media (min-width: $desktop) {
   .header {
+    min-height: 96px;
 
     .wrapper {
       width: 1750px;
@@ -160,12 +196,13 @@
   }
 }
 
-@media (max-width: $hd_desktop) {
+@media (max-width: $desktop) {
   .header {
+    min-height: 70px;
 
     .wrapper {
-        width: 1260px;
-        min-height: 70px;
+      width: 1260px;
+      min-height: 70px;
     }
 
     .private_office {
@@ -199,7 +236,7 @@
   }
 }
 
-@media (max-width: $desktop) {
+@media (max-width: $tablet) {
   .header {
 
     .wrapper {
@@ -215,8 +252,30 @@
       display: none;
     }
 
+    .popup_menu {
+      .private_office {
+        display: flex;
+      }
+    }
+
     .menu_open_table {
       display: inline-block;
+    }
+
+  }
+}
+
+@media (max-width: $mobile) {
+  .header {
+    .wrapper {
+        width: 290px;
+        min-height: 60px;
+    }
+
+    .popup_menu {
+      width: 100vw;
+      padding-top: 100px;
+      padding-left: 25%;
     }
   }
 }

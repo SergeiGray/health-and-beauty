@@ -8,12 +8,11 @@
     &::after {
       z-index: -1;
       position: absolute;
+      width: 1025px;
       top: -138px;
       left: 410px;
       content: 'Тарифы';
       font-weight: 900;
-      font-size: 210px;
-      line-height: 284px;
       letter-spacing: 0.05em;
       text-transform: uppercase;
       color: transparent;
@@ -34,6 +33,7 @@
     width: 445px;
     box-sizing: border-box;
     border: 4px solid #FCF6F3;
+    transition: 1s;
 
     &:hover {
       box-shadow: 0px 0px 35px 0px rgba(39, 14, 14, 0.05);
@@ -163,9 +163,17 @@
       }
     }
   }
+
+  .discount {
+    .title {
+      &::after {
+        display: none;
+      }
+    }
+  }
 }
 
-@media (max-width: $hd_desktop) {
+@media (max-width: $desktop) {
   .tariff {
     margin-bottom: 120px;
 
@@ -177,8 +185,7 @@
       margin-bottom: 50px;
 
       &::after {
-        font-size: 160px;
-        line-height: 218px;
+        width: 735px;
         top: -100px;
         left: 440px;
       }
@@ -268,7 +275,7 @@
   }
 }
 
-@media (max-width: $desktop) {
+@media (max-width: $tablet) {
   .tariff {
     margin-bottom: 100px;
 
@@ -281,8 +288,7 @@
       margin-bottom: 37px;
 
       &::after {
-        font-size: 100px;
-        line-height: 136px;
+        width: 345px;
         top: -40px;
         left: 410px;
       }
@@ -351,7 +357,7 @@
           width: 640px;
 
           &_first_container {
-            margin-right: 80px;
+            margin-right: 40px;
           }
         }
 
@@ -416,6 +422,164 @@
 
           .caption {
             margin-bottom: 20px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: $mobile) {
+  .tariff {
+    margin-bottom: 60px;
+
+    .list {
+      flex-direction: column;
+      margin-bottom: 55px;
+    }
+
+    .title {
+      margin-bottom: 25px;
+
+      &::after {
+        display: none;
+      }
+    }
+
+    .item {
+      width: 100%;
+
+      &:not(:last-child) {
+        margin-right: 0;
+        margin-bottom: 55px;
+      }
+
+      &:nth-child(1) {
+        .header {
+          background-position: 93% center;
+        }
+
+        .content .structure {
+          margin-bottom: 8px;
+        }
+      }
+
+
+      &:nth-child(2) {
+        .header {
+          background-position: 93% center;
+        }
+
+        .content .structure {
+          margin-bottom: 10px;
+        }
+      }
+
+      &:nth-child(3) {
+        .header {
+          background-position: 93% center;
+        }
+
+        .content .structure {
+          margin-bottom: 10px;
+        }
+      }
+
+      .header {
+        justify-content: flex-start;
+        min-height: 75px;
+        padding-left: 18px;
+        padding-right: 20px;
+
+        .name {
+          font-size: 18px;
+          margin-right:0;
+        }
+      }
+
+      .content {
+        padding-top: 19px;
+        padding-left: 18px;
+        padding-bottom: 65px;
+
+        .subtitle {
+          margin-bottom: 14px;
+        }
+
+        .structure {
+          display: flex;
+          flex-direction: column;
+          justify-content: flex-start;
+          width: auto;
+
+          &_first_container {
+            margin-right: 0;
+          }
+        }
+
+        .text {
+          max-width: 238px;
+          font-size: 14px;
+          margin-bottom: 11px;
+        }
+
+        .inactive {
+          display: none;
+        }
+
+        .button {
+          bottom: 12px;
+          right: 20px;
+        }
+
+        .price {
+          margin-bottom: 0;
+          font-size: 22px;
+
+          .old_price {
+            font-size: 16px;
+            margin-top: 0;
+          }
+        }
+      }
+    }
+
+    .discount {
+      flex-direction: column;
+
+      .interest {
+        margin-right: 0;
+
+        .title {
+          font-size: 22px;
+          line-height: 200%;
+          margin-bottom: 10px;
+        }
+
+        .image {
+          width: 305px;
+        }
+      }
+
+      .timer {
+
+        .title {
+          margin: 5px 0 12px;
+        }
+
+        .timer_item {
+          width: 69px;
+          padding-top: 15px;
+          margin-right: 5px;
+
+          .value {
+            font-size: 28px;
+            margin-bottom: 5px;
+          }
+
+          .caption {
+            font-size: 14px;
+            margin-bottom: 15px;
           }
         }
       }
