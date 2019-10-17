@@ -32,7 +32,8 @@ body {
 
 @media (max-width: $mobile) {
   .wrapper {
-    width: 290px;
+    // width: 290px;
+    width: 92vw;
   }
 }
 
@@ -82,8 +83,8 @@ body {
 
 @media (max-width: $mobile) {
   .title {
-    font-size: 28px;
-    line-height: 38px;
+    font-size: 9vw;
+    line-height: 130%;
 
     &::after {
       display: none;

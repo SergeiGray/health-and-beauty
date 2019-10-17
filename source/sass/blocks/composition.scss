@@ -298,44 +298,108 @@
   }
 }
 
+// @media (max-width: $mobile) {
+//   .composition {
+//     .title {
+//       margin-bottom: 27px;
+//     }
+
+//     .item {
+//       padding: 4px;
+//       margin-bottom: 10px;
+
+//       .content {
+//         padding: 27px 10px 10px 17px;
+
+//         .subtitle {
+//           font-size: 18px;
+//           line-height: 188%;
+//         }
+
+//         .rations {
+//           padding-left: 15px;
+//         }
+
+//         .text {
+//           width: 230px;
+//           font-size: 14px;
+//         }
+
+//         .bonus {
+//           margin-top: 24px;
+//           margin-bottom: 34px;
+
+//           .icon {
+//             margin-right: 17px;
+//           }
+
+//           .text {
+//             width: 205px;
+//             font-size: 14px;
+//             line-height: 133.5%;
+//           }
+//         }
+//       }
+
+//       &:last-child {
+//         .content {
+//           padding: 27px 10px 10px 17px;
+//         }
+//         .subtitle {
+//           margin-bottom: 9px;
+//         }
+//         .bonus {
+//           margin-bottom: 60px;
+//         }
+//       }
+//     }
+
+//     .composition_bg {
+//       display: none;
+//     }
+//   }
+// }
+
 @media (max-width: $mobile) {
   .composition {
     .title {
-      margin-bottom: 27px;
+      margin-bottom: 9vw;
     }
 
     .item {
-      padding: 4px;
-      margin-bottom: 10px;
+      min-height: 122vw;
+      padding: 1vw;
+      margin-bottom: 3vw;
 
       .content {
-        padding: 27px 10px 10px 17px;
+        padding: 9vw 3vw 3vw 5vw;
 
         .subtitle {
-          font-size: 18px;
+          font-size: 5.5vw;
           line-height: 188%;
+          margin-bottom: 4vw;
         }
 
         .rations {
-          padding-left: 15px;
+          padding-left: 5vw;
         }
 
         .text {
-          width: 230px;
-          font-size: 14px;
+          width: 72vw;
+          font-size: 4.5vw;
         }
 
         .bonus {
-          margin-top: 24px;
-          margin-bottom: 34px;
+          margin-top: 8vw;
+          margin-bottom: 11vw;
 
           .icon {
-            margin-right: 17px;
+            margin-right: 6vw;
           }
 
           .text {
-            width: 205px;
-            font-size: 14px;
+            width: 64vw;
+            font-size: 4.5vw;
             line-height: 133.5%;
           }
         }

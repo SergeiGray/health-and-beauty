@@ -136,49 +136,109 @@
   }
 }
 
+// @media (max-width: $mobile) {
+//   .subscription {
+//     width: 320px;
+//     margin: 0 auto;
+//     background-position: 100% 30%;
+//     padding-bottom: 52px;
+
+//     .wrapper {
+//       padding-left: 0;
+//     }
+
+//     .title {
+//       margin-bottom: 13px;
+//     }
+
+//     .text {
+//       width: 220px;
+//       font-size: 14px;
+//       line-height: 200%;
+//       margin-bottom: 33px;
+//     }
+
+//     .row {
+//       flex-direction: column;
+//       margin-bottom: 5px;
+
+//       .input {
+//         width: 100%;
+//         height: 60px;
+//         margin-bottom: 20px;
+//         margin-right: 0;
+//       }
+
+//       .submit {
+//         width: 100%;
+//         height: 60px;
+//         margin-bottom: 20px;
+//         margin-right: 0;
+//       }
+
+//       .main__checkbox_label {
+//         font-size: 12px;
+//         line-height: 100%;
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: $mobile) {
   .subscription {
-    width: 320px;
+    width: 100vw;
     margin: 0 auto;
-    background-position: 100% 30%;
-    padding-bottom: 52px;
+    background-position: 100% 33%;
+    background-size: 56vw 50vw;
+    padding-top: 17vw;
+    padding-bottom: 16vw;
 
     .wrapper {
       padding-left: 0;
     }
 
     .title {
-      margin-bottom: 13px;
+      margin-bottom: 4vw;
     }
 
     .text {
-      width: 220px;
-      font-size: 14px;
+      width: 69vw;
+      font-size: 4.5vw;
       line-height: 200%;
-      margin-bottom: 33px;
+      margin-bottom: 10vw;
     }
 
     .row {
       flex-direction: column;
-      margin-bottom: 5px;
+      margin-bottom: 2vw;
 
       .input {
         width: 100%;
-        height: 60px;
-        margin-bottom: 20px;
+        height: 19vw;
+        margin-bottom: 6vw;
         margin-right: 0;
       }
 
       .submit {
         width: 100%;
-        height: 60px;
-        margin-bottom: 20px;
+        height: 19vw;
+        margin-bottom: 6vw;
         margin-right: 0;
       }
 
       .main__checkbox_label {
-        font-size: 12px;
-        line-height: 100%;
+        width: 81vw;
+        font-size: 4vw;
+        line-height: 150%;
+
+        &::after {
+          top: 7vw;
+        }
+
+        .link {
+          font-size: 4vw;
+          line-height: 150%;
+        }
       }
     }
   }

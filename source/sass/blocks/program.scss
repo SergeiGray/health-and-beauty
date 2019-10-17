@@ -230,69 +230,138 @@
   }
 }
 
+// @media (max-width: $mobile) {
+//   .program {
+//     margin-bottom: 384px;
+
+//     .form {
+//       width: 100%;
+//       padding-top: 27px;
+//       padding-left: 21px;
+//       padding-right: 23px;
+//       background-position: 200px 15px;
+
+//       .title {
+//         font-size: 18px;
+//         line-height: 25px;
+//       }
+
+//       .subtitle {
+//         font-size: 60px;
+//         line-height: 82px;
+//         margin-bottom: 22px;
+
+//         .up {
+//           font-size: 30px;
+//           line-height: 41px;
+//           margin-top: 8px;
+//           margin-right: 13px;
+//         }
+//         .down {
+//           font-size: 30px;
+//           line-height: 41px;
+//           margin-bottom: 7px;
+//           margin-left: 13px;
+//         }
+//       }
+
+//       .input {
+//         min-height: 60px;
+//       }
+
+//       .submit {
+//         min-height: 60px;
+//         margin-bottom: 48px;
+//       }
+//     }
+
+//     .program_bg {
+//       width: 320px;
+//       height: 490px;
+//       top: 285px;
+//       left: -15px;
+//     }
+
+//     .book {
+//       width: 320px;
+//       height: 488px;
+//       top: 285px;
+//       left: -15px;
+
+//       .link {
+//         width: 71px;
+//         height: 71px;
+//         font-size: 13px;
+//         margin-bottom: 85px;
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: $mobile) {
   .program {
-    margin-bottom: 384px;
+    margin-bottom: 120vw;
 
     .form {
       width: 100%;
-      padding-top: 27px;
-      padding-left: 21px;
-      padding-right: 23px;
-      background-position: 200px 15px;
+      padding-top: 8.5vw;
+      padding-left: 7vw;
+      padding-right: 7vw;
+      background-position: 80% 35%;
 
       .title {
-        font-size: 18px;
-        line-height: 25px;
+        font-size: 5.5vw;
+        line-height: 142%;
       }
 
       .subtitle {
-        font-size: 60px;
-        line-height: 82px;
-        margin-bottom: 22px;
+        font-size: 19vw;
+        line-height: 25vw;
+        margin-bottom: 7vw;
 
         .up {
-          font-size: 30px;
-          line-height: 41px;
-          margin-top: 8px;
-          margin-right: 13px;
+          font-size: 10vw;
+          line-height: 16vw;
+          margin-top: 2vw;
+          margin-right: 4vw;
         }
         .down {
-          font-size: 30px;
-          line-height: 41px;
-          margin-bottom: 7px;
-          margin-left: 13px;
+          font-size: 10vw;
+          line-height: 16vw;
+          margin-bottom: 2vw;
+          margin-left: 4vw;
         }
       }
 
       .input {
-        min-height: 60px;
+        min-height: 19vw;
+        margin-bottom: 10vw;
       }
 
       .submit {
-        min-height: 60px;
-        margin-bottom: 48px;
+        min-height: 19vw;
+        margin-bottom: 15vw;
       }
     }
 
     .program_bg {
-      width: 320px;
-      height: 490px;
-      top: 285px;
-      left: -15px;
+      width: 100vw;
+      height: 153vw;
+      top: 89vw;
+      left: -4vw;
     }
 
     .book {
-      width: 320px;
-      height: 488px;
-      top: 285px;
-      left: -15px;
+      width: 100vw;
+      height: 153vw;
+      top: 89vw;
+      left: -4vw;
 
       .link {
-        width: 71px;
-        height: 71px;
-        font-size: 13px;
-        margin-bottom: 85px;
+        width: 22vw;
+        height: 22vw;
+        font-size: 4vw;
+        margin-bottom: 27vw;
       }
     }
   }

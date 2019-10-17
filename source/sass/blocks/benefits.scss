@@ -308,27 +308,148 @@
   }
 }
 
+// @media (max-width: $mobile) {
+//   .benefits {
+//     margin-bottom: 55px;
+
+//     .title {
+//       margin-bottom: 30px;
+//       &::after {
+//         display: none;
+//       }
+//     }
+
+//     .item {
+//       width: 290px;
+//       height: auto;
+//       padding: 27px 18px 30px 20px;
+//       margin-bottom: 10px;
+
+//       &:nth-child(1) {
+//         .icon {
+//           top: 100px;
+//           right: 15px;
+//         }
+//       }
+
+//       &:nth-child(2) {
+//         margin-left: 0;
+//         margin-right: 0;
+
+//         .icon {
+//           width: 92px;
+//           height: 91px;
+//           top: 100px;
+//           right: 25px;
+//         }
+//       }
+
+//       &:nth-child(3) {
+//         margin-top: 0;
+//         margin-right: 0;
+//         .icon {
+//           width: 89px;
+//           height: 89px;
+//           top: 100px;
+//           right: 25px;
+//         }
+//       }
+
+//       &:nth-child(4) {
+//         margin-top: 0;
+//         .icon {
+//           width: 89px;
+//           height: 92px;
+//           top: 100px;
+//           right: 25px;
+//         }
+
+//         &::after {
+//           top: 395px;
+//           left: -20px;
+//           width: 320px;
+//           height: 417px;
+//         }
+//       }
+
+//       &:nth-child(5) {
+//         margin-left: 0;
+
+//         .icon {
+//           width: 92px;
+//           height: 92px;
+//           top: 100px;
+//           right: 25px;
+//         }
+//       }
+
+//       &:nth-child(6) {
+//         margin-top: 0;
+
+//         .subtitle {
+//           width: 100%;
+//         }
+
+//         .icon {
+//           width: 97px;
+//           height: 99px;
+//           top: 100px;
+//           right: 25px;
+//         }
+//       }
+
+//       .subtitle {
+//         width: 200px;
+//         min-height: auto;
+//         font-size: 14px;
+//         line-height: 166.5%;
+//         margin-bottom: 13px;
+//       }
+
+//       .text {
+//         font-size: 14px;
+//         margin-bottom: 11px;
+//       }
+//     }
+
+//     .warning {
+//       margin-top: 62px;
+
+//       .icon {
+//         margin: 10px 23px 0 4px;
+//       }
+
+//       .text {
+//         width: 210px;
+//         font-size: 12px;
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: $mobile) {
   .benefits {
-    margin-bottom: 55px;
+    margin-bottom: 17vw;
 
     .title {
-      margin-bottom: 30px;
+      margin-bottom: 10vw;
       &::after {
         display: none;
       }
     }
 
     .item {
-      width: 290px;
+      width: 91vw;
       height: auto;
-      padding: 27px 18px 30px 20px;
-      margin-bottom: 10px;
+      padding: 8vw 6vw 10vw 7vw;
+      margin-bottom: 3vw;
 
       &:nth-child(1) {
         .icon {
-          top: 100px;
-          right: 15px;
+          width: 28vw;
+          height: 28vw;
+          top: 31vw;
+          right: 5vw;
         }
       }
 
@@ -337,10 +458,10 @@
         margin-right: 0;
 
         .icon {
-          width: 92px;
-          height: 91px;
-          top: 100px;
-          right: 25px;
+          width: 29vw;
+          height: 29vw;
+          top: 31vw;
+          right: 8vw;
         }
       }
 
@@ -348,27 +469,27 @@
         margin-top: 0;
         margin-right: 0;
         .icon {
-          width: 89px;
-          height: 89px;
-          top: 100px;
-          right: 25px;
+          width: 28vw;
+          height: 28vw;
+          top: 31vw;
+          right: 8vw;
         }
       }
 
       &:nth-child(4) {
         margin-top: 0;
         .icon {
-          width: 89px;
-          height: 92px;
-          top: 100px;
-          right: 25px;
+          width: 28vw;
+          height: 29vw;
+          top: 31vw;
+          right: 8vw;
         }
 
         &::after {
-          top: 395px;
-          left: -20px;
-          width: 320px;
-          height: 417px;
+          top: 124vw;
+          left: -6vw;
+          width: 100vw;
+          height: 130vw;
         }
       }
 
@@ -376,10 +497,10 @@
         margin-left: 0;
 
         .icon {
-          width: 92px;
-          height: 92px;
-          top: 100px;
-          right: 25px;
+          width: 29vw;
+          height: 29vw;
+          top: 31vw;
+          right: 8vw;
         }
       }
 
@@ -391,37 +512,38 @@
         }
 
         .icon {
-          width: 97px;
-          height: 99px;
-          top: 100px;
-          right: 25px;
+          width: 31vw;
+          height: 31vw;
+          top: 31vw;
+          right: 8vw;
         }
       }
 
       .subtitle {
-        width: 200px;
+        width: 63vw;
         min-height: auto;
-        font-size: 14px;
+        font-size: 4.5vw;
         line-height: 166.5%;
-        margin-bottom: 13px;
+        margin-bottom: 4vw;
       }
 
       .text {
-        font-size: 14px;
-        margin-bottom: 11px;
+        width: 81vw;
+        font-size: 4.5vw;
+        margin-bottom: 3vw;
       }
     }
 
     .warning {
-      margin-top: 62px;
+      margin-top: 20vw;
 
       .icon {
-        margin: 10px 23px 0 4px;
+        margin: 3vw 7vw 0 1vw;
       }
 
       .text {
-        width: 210px;
-        font-size: 12px;
+        width: 66vw;
+        font-size: 4vw;
       }
     }
   }

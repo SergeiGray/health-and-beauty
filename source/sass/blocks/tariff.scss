@@ -429,17 +429,175 @@
   }
 }
 
+// @media (max-width: $mobile) {
+//   .tariff {
+//     margin-bottom: 60px;
+
+//     .list {
+//       flex-direction: column;
+//       margin-bottom: 55px;
+//     }
+
+//     .title {
+//       margin-bottom: 25px;
+
+//       &::after {
+//         display: none;
+//       }
+//     }
+
+//     .item {
+//       width: 100%;
+
+//       &:not(:last-child) {
+//         margin-right: 0;
+//         margin-bottom: 55px;
+//       }
+
+//       &:nth-child(1) {
+//         .header {
+//           background-position: 93% center;
+//         }
+
+//         .content .structure {
+//           margin-bottom: 8px;
+//         }
+//       }
+
+
+//       &:nth-child(2) {
+//         .header {
+//           background-position: 93% center;
+//         }
+
+//         .content .structure {
+//           margin-bottom: 10px;
+//         }
+//       }
+
+//       &:nth-child(3) {
+//         .header {
+//           background-position: 93% center;
+//         }
+
+//         .content .structure {
+//           margin-bottom: 10px;
+//         }
+//       }
+
+//       .header {
+//         justify-content: flex-start;
+//         min-height: 75px;
+//         padding-left: 18px;
+//         padding-right: 20px;
+
+//         .name {
+//           font-size: 18px;
+//           margin-right:0;
+//         }
+//       }
+
+//       .content {
+//         padding-top: 19px;
+//         padding-left: 18px;
+//         padding-bottom: 65px;
+
+//         .subtitle {
+//           margin-bottom: 14px;
+//         }
+
+//         .structure {
+//           display: flex;
+//           flex-direction: column;
+//           justify-content: flex-start;
+//           width: auto;
+
+//           &_first_container {
+//             margin-right: 0;
+//           }
+//         }
+
+//         .text {
+//           max-width: 238px;
+//           font-size: 14px;
+//           margin-bottom: 11px;
+//         }
+
+//         .inactive {
+//           display: none;
+//         }
+
+//         .button {
+//           bottom: 12px;
+//           right: 20px;
+//         }
+
+//         .price {
+//           margin-bottom: 0;
+//           font-size: 22px;
+
+//           .old_price {
+//             font-size: 16px;
+//             margin-top: 0;
+//           }
+//         }
+//       }
+//     }
+
+//     .discount {
+//       flex-direction: column;
+
+//       .interest {
+//         margin-right: 0;
+
+//         .title {
+//           font-size: 22px;
+//           line-height: 200%;
+//           margin-bottom: 10px;
+//         }
+
+//         .image {
+//           width: 305px;
+//         }
+//       }
+
+//       .timer {
+
+//         .title {
+//           margin: 5px 0 12px;
+//         }
+
+//         .timer_item {
+//           width: 69px;
+//           padding-top: 15px;
+//           margin-right: 5px;
+
+//           .value {
+//             font-size: 28px;
+//             margin-bottom: 5px;
+//           }
+
+//           .caption {
+//             font-size: 14px;
+//             margin-bottom: 15px;
+//           }
+//         }
+//       }
+//     }
+//   }
+// }
+
 @media (max-width: $mobile) {
   .tariff {
-    margin-bottom: 60px;
+    margin-bottom: 19vw;
 
     .list {
       flex-direction: column;
-      margin-bottom: 55px;
+      margin-bottom: 17vw;
     }
 
     .title {
-      margin-bottom: 25px;
+      margin-bottom: 8vw;
 
       &::after {
         display: none;
@@ -447,63 +605,69 @@
     }
 
     .item {
+      position: relative;
       width: 100%;
+      margin: 0 auto;
 
       &:not(:last-child) {
-        margin-right: 0;
-        margin-bottom: 55px;
+        margin-right: auto;
+        margin-bottom: 17vw;
       }
 
       &:nth-child(1) {
         .header {
+          background-size: 12vw 12vw;
           background-position: 93% center;
         }
 
         .content .structure {
-          margin-bottom: 8px;
+          margin-bottom: 2.5vw;
         }
       }
 
-
       &:nth-child(2) {
         .header {
+          background-size: 22vw 15vw;
           background-position: 93% center;
         }
 
         .content .structure {
-          margin-bottom: 10px;
+          margin-bottom: 3vw;
         }
       }
 
       &:nth-child(3) {
         .header {
+          background-size: 19vw 19vw;
           background-position: 93% center;
         }
 
         .content .structure {
-          margin-bottom: 10px;
+          margin-bottom: 3vw;
         }
       }
 
       .header {
         justify-content: flex-start;
-        min-height: 75px;
-        padding-left: 18px;
-        padding-right: 20px;
+        min-height: 24vw;
+        padding-left: 6vw;
+        padding-right: 6vw;
 
         .name {
-          font-size: 18px;
+          font-size: 5.5vw;
           margin-right:0;
         }
       }
 
       .content {
-        padding-top: 19px;
-        padding-left: 18px;
-        padding-bottom: 65px;
+        position: static;
+        padding-top: 6vw;
+        padding-left: 6vw;
+        padding-bottom: 20vw;
 
         .subtitle {
-          margin-bottom: 14px;
+          margin-bottom: 4.5vw;
+          font-size: 5vw;
         }
 
         .structure {
@@ -518,9 +682,9 @@
         }
 
         .text {
-          max-width: 238px;
-          font-size: 14px;
-          margin-bottom: 11px;
+          max-width: 75vw;
+          font-size: 4.5vw;
+          margin-bottom: 3.5vw;
         }
 
         .inactive {
@@ -528,17 +692,24 @@
         }
 
         .button {
-          bottom: 12px;
-          right: 20px;
+          width: 76vw;
+          min-width: 76vw;
+          height: 19vw;
+          min-height: 19vw;;
+          font-size: 4.5vw;
+          bottom: -9vw;
+          margin: 0;
+          left: calc(50% - 38vw);
         }
 
         .price {
           margin-bottom: 0;
-          font-size: 22px;
+          font-size: 7vw;
 
           .old_price {
-            font-size: 16px;
+            font-size: 5vw;
             margin-top: 0;
+            margin-left: 6vw;
           }
         }
       }
@@ -551,35 +722,36 @@
         margin-right: 0;
 
         .title {
-          font-size: 22px;
+          font-size: 7vw;
           line-height: 200%;
-          margin-bottom: 10px;
+          margin-bottom: 3vw;
         }
 
         .image {
-          width: 305px;
+          width: 95vw;
         }
       }
 
       .timer {
 
         .title {
-          margin: 5px 0 12px;
+          font-size: 5vw;
+          margin: 2vw 0 4vw;
         }
 
         .timer_item {
-          width: 69px;
-          padding-top: 15px;
-          margin-right: 5px;
+          width: 22vw;
+          padding-top: 5vw;
+          margin-right: 2vw;
 
           .value {
-            font-size: 28px;
-            margin-bottom: 5px;
+            font-size: 9vw;
+            margin-bottom: 2vw;
           }
 
           .caption {
-            font-size: 14px;
-            margin-bottom: 15px;
+            font-size: 4.5vw;
+            margin-bottom: 5vw;
           }
         }
       }

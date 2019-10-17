@@ -4,7 +4,7 @@
 
   var hangFlexslider = function () {
     $(document).ready(function() {
-      if($(window).width() > 2000) {
+      if($(window).width() > 1910) {
         $('.team__slider').flexslider({
           selector: ".team__slider_container > li",
           animation: "slide",
@@ -43,6 +43,23 @@
       };
 
       if($(window).width() < 750) {
+        $('.team__slider').flexslider({
+          selector: ".team__slider_container > li",
+          animation: "slide",
+          slideshow: false,
+          smoothHeight: true,
+          keyboard: true,
+          prevText: "",
+          nextText: "",
+          itemMargin: 0,
+          minItems: 1,
+          maxItems: 1,
+          controlNav: false,
+          directionNav: true,
+          touch: true,
+          move: 1
+        });
+
         $('.feedback__slider').flexslider({
           selector: ".feedback__slider_container > li",
           animation: "slide",
@@ -82,7 +99,7 @@
         });
       };
 
-      if($(window).width() < 2000) {
+      if($(window).width() < 1910) {
         $('.team__slider').flexslider({
           selector: ".team__slider_container > li",
           animation: "slide",
@@ -177,7 +194,7 @@
   };
 
   var getStickyMenu = function () {
-    if($(window).width() > 2000) {
+    if($(window).width() > 1910) {
       $(window).scroll(function() {
         if($(this).scrollTop() >= 800) {
             $('.header').addClass('stickytop');
@@ -188,7 +205,7 @@
       });
     };
 
-    if($(window).width() < 2000 && $(window).width() > 1270) {
+    if($(window).width() < 1910 && $(window).width() > 1270) {
       $(window).scroll(function() {
         if($(this).scrollTop() >= 630) {
             $('.header').addClass('stickytop');
