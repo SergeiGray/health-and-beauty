@@ -62,18 +62,25 @@
   .partner {
     margin-bottom: 65px;
 
+    .wrapper {
+      display: flex;
+      flex-direction: column;
+    }
+
     .title {
       margin-bottom: 35px;
+      text-align: center;
     }
 
     .partner__bg {
       top: -325px;
-      left: -25px;
-      width: 770px;
+      left: -2vw;
+      width: 100vw;
       height: 1540px;
     }
 
     .text {
+      width: 100%;
       font-size: 15px;
 
       &:last-of-type {
@@ -81,49 +88,20 @@
       }
     }
 
+    .picture {
+      align-self: center;
+    }
+
     .image {
       position: relative;
       top: 0;
       left: 0;
+      right: 0;
       width: 717px;
       height: 322px;
     }
   }
 }
-
-// @media (max-width: $mobile) {
-//   .partner {
-//     margin-bottom: 45px;
-
-//     .title {
-//       font-size: 22px;
-//       line-height: 161%;
-//       margin-bottom: 13px;
-//     }
-
-//     .picture {
-//       display: none;
-//     }
-
-//     .text {
-//       width: 290px;
-//       font-size: 14px;
-//       line-height: 200%;
-//       margin-bottom: 11px;
-
-//       &:last-of-type {
-//         margin-bottom: 20px;
-//       }
-//     }
-
-//     .partner__bg {
-//       top: -75px;
-//       left: -15px;
-//       width: 320px;
-//       height: 1275px;
-//     }
-//   }
-// }
 
 @media (max-width: $mobile) {
   .partner {

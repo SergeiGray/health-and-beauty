@@ -199,10 +199,12 @@
   .feedback {
 
     .title {
+      text-align: center;
       &::after {
         width: 365px;
         top: -45px;
-        left: 390px;
+        left: auto;
+        right: -2vw;
       }
     }
 
@@ -211,16 +213,18 @@
     }
 
     .feedback_x-hidden {
-      width: 750px;
+      width: 100vw;
+      margin-left: -2vw;
       height: 670px;
+      margin-left: auto;
     }
 
     .feedback__slider {
-      width: 750px;
+      width: 100vw;
       justify-content: flex-start;
 
       .flex-viewport {
-        width: 750px;
+        width: 100vw;
       }
     }
   }

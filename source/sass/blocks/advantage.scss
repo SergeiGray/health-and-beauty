@@ -186,12 +186,14 @@
     margin-bottom: 65px;
 
     .title {
+      text-align: center;
       margin-bottom: 80px;
 
       &::after {
         width: 190px;
-        top: -34px;
-        left: 565px;
+        top: -45px;
+        left: auto;
+        right: -2vw;
       }
     }
 
@@ -204,7 +206,7 @@
     }
 
     .list {
-      justify-content: space-between;
+      justify-content: center;
     }
 
     .item {
@@ -214,105 +216,37 @@
 
       &:nth-child(1) {
         width: 325px;
-        margin-right: 55px;
+        margin-right: 20px;
       }
 
       &:nth-child(2) {
         width: 340px;
-        margin-right: 0;
+        margin-right: 20px;
       }
 
       &:nth-child(3) {
         width: 360px;
-        margin-right: 25px;
+        margin-right: 20px;
         margin-bottom: 57px;
       }
 
       &:nth-child(4) {
         width: 335px;
-        margin-right: 0;
+        margin-right: 20px;
       }
 
       &:nth-child(5) {
         width: 340px;
-        margin-right: 45px;
+        margin-right: 20px;
       }
 
       &:nth-child(6) {
         width: 330px;
-        margin-right: 0;
+        margin-right: 20px;
       }
     }
   }
 }
-
-// @media (max-width: $mobile) {
-//   .advantage {
-//     margin-bottom: 55px;
-
-//     .title {
-//       margin-bottom: 48px;
-//     }
-
-//     .subtitle {
-//       font-size: 14px;
-//       margin-bottom: 11px;
-//     }
-
-//     .icon {
-//       margin-bottom: 25px;
-//     }
-
-//     .text {
-//       font-size: 14px;
-//     }
-
-//     .item {
-//       display: flex;
-//       flex-direction: column;
-//       min-height: auto;
-//       width: 100%;
-//       margin-right: 0;
-
-//       &:not(:last-child) {
-//         margin-bottom: 55px;
-//       }
-
-//       &:nth-child(1) {
-//         width: 100%;
-//         margin-right: 0;
-//       }
-
-//       &:nth-child(2) {
-//         width: 100%;
-//         margin-right: 0;
-//         .subtitle {
-//           width: 210px;
-//         }
-//       }
-
-//       &:nth-child(3) {
-//         width: 100%;
-//         margin-right: 0;
-//       }
-
-//       &:nth-child(4) {
-//         width: 100%;
-//         margin-right: 0;
-//       }
-
-//       &:nth-child(5) {
-//         width: 100%;
-//         margin-right: 0;
-//       }
-
-//       &:nth-child(6) {
-//         width: 100%;
-//         margin-right: 0;
-//       }
-//     }
-//   }
-// }
 
 @media (max-width: $mobile) {
   .advantage {

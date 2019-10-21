@@ -83,13 +83,13 @@
         $('.team__slider').flexslider({
           selector: ".team__slider_container > li",
           animation: "slide",
-          slideshow: false,
+          slideshow: true,
           smoothHeight: true,
           keyboard: true,
           prevText: "",
           nextText: "",
-          itemWidth: 715,
-          itemMargin: 0,
+          itemWidth: 266,
+          itemMargin: 20,
           minItems: 1,
           maxItems: 1,
           controlNav: false,
@@ -151,7 +151,7 @@
   var getBlockQuestionsSlider = function () {
     $('.questions .item .subtitle').click( function (evt) {
         evt.preventDefault();
-        $(evt.target).parents('.item').find('.text').slideToggle('slow', function() {
+        $(evt.target).parents('.item').find('.text').slideToggle('fast', function() {
           $(evt.target).parents('.item').toggleClass('active');
         });
     });
@@ -226,16 +226,16 @@
     if($(window).width() > 1270) {
       $('.menu_open').click( function (evt) {
         evt.preventDefault();
-        $('.stickytop .logo').addClass('display_off');
-        $('.stickytop .menu_open').addClass('display_off');
-        $('.stickytop .header_menu').addClass('display_on');
+        $('.stickytop .logo, .payment .logo').addClass('display_off');
+        $('.stickytop .menu_open, .payment .menu_open').addClass('display_off');
+        $('.stickytop .header_menu, .payment .header_menu').addClass('display_on');
       });
 
       $('.menu_close').click( function (evt) {
         evt.preventDefault();
-        $('.stickytop .logo').removeClass('display_off');
-        $('.stickytop .menu_open').removeClass('display_off');
-        $('.stickytop .header_menu').removeClass('display_on');
+        $('.stickytop .logo, .payment .logo').removeClass('display_off');
+        $('.stickytop .menu_open, .payment .menu_open').removeClass('display_off');
+        $('.stickytop .header_menu, .payment .header_menu').removeClass('display_on');
       });
     };
     if($(window).width() < 1270) {
@@ -337,7 +337,7 @@
   };
 
   hangFlexslider();
-  scrollBarСustomization();
+  // scrollBarСustomization();
   getBlockQuestionsSlider();
   getTimer();
   getStickyMenu();

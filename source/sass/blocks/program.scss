@@ -215,10 +215,11 @@
     }
 
     .book {
-      width: 510px;
-      height: 538px;
-      top: 10px;
-      left: 245px;
+      width: 66vw;
+      height: 70vw;
+      top: -3vw;
+      left: auto;
+      right: -2vw;
 
       .link {
         width: 71px;
@@ -229,74 +230,6 @@
     }
   }
 }
-
-// @media (max-width: $mobile) {
-//   .program {
-//     margin-bottom: 384px;
-
-//     .form {
-//       width: 100%;
-//       padding-top: 27px;
-//       padding-left: 21px;
-//       padding-right: 23px;
-//       background-position: 200px 15px;
-
-//       .title {
-//         font-size: 18px;
-//         line-height: 25px;
-//       }
-
-//       .subtitle {
-//         font-size: 60px;
-//         line-height: 82px;
-//         margin-bottom: 22px;
-
-//         .up {
-//           font-size: 30px;
-//           line-height: 41px;
-//           margin-top: 8px;
-//           margin-right: 13px;
-//         }
-//         .down {
-//           font-size: 30px;
-//           line-height: 41px;
-//           margin-bottom: 7px;
-//           margin-left: 13px;
-//         }
-//       }
-
-//       .input {
-//         min-height: 60px;
-//       }
-
-//       .submit {
-//         min-height: 60px;
-//         margin-bottom: 48px;
-//       }
-//     }
-
-//     .program_bg {
-//       width: 320px;
-//       height: 490px;
-//       top: 285px;
-//       left: -15px;
-//     }
-
-//     .book {
-//       width: 320px;
-//       height: 488px;
-//       top: 285px;
-//       left: -15px;
-
-//       .link {
-//         width: 71px;
-//         height: 71px;
-//         font-size: 13px;
-//         margin-bottom: 85px;
-//       }
-//     }
-//   }
-// }
 
 @media (max-width: $mobile) {
   .program {

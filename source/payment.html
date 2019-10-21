@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Совершенно Летние</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/normalize.css">
+  <link rel="stylesheet" type="text/css" href="css/select2.min.css">
+  <link rel="stylesheet" type="text/css" href="css/flexslider.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+<body>
+  <header class="header payment">
+    <div class="wrapper">
+      <div class="container">
+        <a href="index.html" class="logo">
+          <svg class="icon" width="51" height="31">
+            <use xlink:href="img/sprite.svg#icon-logo"></use>
+          </svg>
+          <div class="col">
+            <p class="text">Совершенно</p>
+            <p class="text">Летние</p>
+          </div>
+        </a>
+        <button class="menu_open">Меню</button>
+        <nav class="header_menu">
+          <button class="menu_close"></button>
+          <a href="index.html#benefits" class="header_menu_link">Курс поможет</a>
+          <a href="index.html#team" class="header_menu_link">Кто проводит</a>
+          <a href="index.html#tariff" class="header_menu_link">Тарифы</a>
+          <a href="index.html#advantage" class="header_menu_link">Преимущества</a>
+          <a href="index.html#composition" class="header_menu_link">Что входит в курс</a>
+          <a href="index.html#schedule" class="header_menu_link">Как проходит курс</a>
+          <a href="index.html#feedback" class="header_menu_link">Отзывы</a>
+          <a href="index.html#questions" class="header_menu_link">Частые вопросы</a>
+          <a href="index.html" class="private_office">
+            <svg class="icon" width="15" height="15">
+              <use xlink:href="img/sprite.svg#icon-login"></use>
+            </svg>
+            <p class="text">Личный кабинет</p>
+          </a>
+        </nav>
+      </div>
+      <a href="index.html" class="private_office">
+        <svg class="icon" width="15" height="15">
+          <use xlink:href="img/sprite.svg#icon-login"></use>
+        </svg>
+        <p class="text">Личный кабинет</p>
+      </a>
+      <button class="menu_open_table"></button>
+    </div>
+  </header>
+  <main>
+    <section class="payment">
+      <div class="wrapper">
+        <h1 class="title">
+          <p class="subtitle">Онлайн-курс</p>
+          Красота и здоровье 45+
+        </h1>
+        <form action="" class="form">
+          <p class="subtitle">01. Выберите вариант покупки со скидкой 20%. Сменить тариф можно будет в личном кабинете</p>
+          <ul class="tariff_list">
+            <li class="tariff_item">
+              <input id="tariff_base" type="radio" name="tariff_choice" class="input" checked>
+              <label for="tariff_base" class="label">
+                <svg class="icon" width="31" height="31">
+                  <use xlink:href="img/sprite.svg#icon-leaf"></use>
+                </svg>
+                <p class="title">Базовый</p>
+                <p class="price">
+                  <span class="old_price">4 500 руб.</span>
+                  <span>3 900 руб.</span>
+                </p>
+              </label>
+            </li>
+            <li class="tariff_item">
+              <input id="tariff_standard" type="radio" name="tariff_choice" class="input">
+              <label for="tariff_standard" class="label">
+                <svg class="icon" width="51" height="34">
+                  <use xlink:href="img/sprite.svg#icon-two-leaf"></use>
+                </svg>
+                <p class="title">Стандарт</p>
+                <p class="price">
+                  <span class="old_price">8 000 руб.</span>
+                  6 400 руб.
+                </p>
+              </label>
+            </li>
+            <li class="tariff_item">
+              <input id="tariff_advanced" type="radio" name="tariff_choice" class="input">
+              <label for="tariff_advanced" class="label">
+                <svg class="icon" width="48" height="48">
+                  <use xlink:href="img/sprite.svg#icon-three-leaf"></use>
+                </svg>
+                <p class="title">Продвинутый</p>
+                <p class="price">
+                  <span class="old_price">15 000 руб.</span>
+                  12 000 руб.
+                </p>
+              </label>
+            </li>
+          </ul>
+          <p class="subtitle">02. Укажите ваш E-mail</p>
+          <input type="email" placeholder="E-mail*" name="E-mail" data-validation="email" data-validation-error-msg=" ">
+          <p class="subtitle">03. Выберите способ оплаты</p>
+          <ul class="pay_list">
+            <li class="pay_item">
+              <input id="pay_card" type="radio" name="pay_choice" class="input" checked>
+              <label for="pay_card" class="label">
+                <p class="title">Картой</p>
+              </label>
+            </li>
+            <li class="pay_item">
+              <input id="pay_paypal" type="radio" name="pay_choice" class="input">
+              <label for="pay_paypal" class="label">
+                <p class="title">PayPal</p>
+              </label>
+            </li>
+          </ul>
+          <p class="subtitle subtitle_for_amount">К оплате</p>
+          <p class="amount_payable">3 900 руб.</p>
+          <div class="submit_container">
+            <button class="button">Перейти к оплате</button>
+            <p class="text">Оплачивая курс, вы соглашаетесь с <a href="" class="link">договором-офертой</a> и <a href="" class="link">правилами</a> проведения курса</p>
+          </div>
+        </form>
+      </div>
+    </section>
+  </main>
+  <footer class="footer payment">
+    <div class="wrapper">
+      <a href="index.html" class="logo">
+        <svg class="icon" width="51" height="31">
+          <use xlink:href="img/sprite.svg#icon-logo"></use>
+        </svg>
+        <div class="col">
+          <p class="text">Совершенно</p>
+          <p class="text">Летние</p>
+        </div>
+      </a>
+      <p class="text">ООО «Красота и здоровье», 2019 ©</p>
+      <a href="index.html" class="text">Политика конфиденциальности</a>
+    </div>
+  </footer>
+
+  <script src="js/jquery-3.4.1.min.js"></script>
+  <script src="js/jquery.nicescroll.min.js"></script>
+  <script src="js/jquery.form-validator.min.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery.countdown-ru.js"></script>
+  <script src="js/svgxuse.min.js"></script>
+  <script src="js/jquery.flexslider.min.js"></script>
+  <script src="js/script.js"></script>
+
+</body>
+</html>
